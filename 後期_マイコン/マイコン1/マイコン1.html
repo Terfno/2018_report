@@ -1,0 +1,1558 @@
+<!DOCTYPE html><html><head>
+      <title>&#x30DE;&#x30A4;&#x30B3;&#x30F3;1</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/terfno/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.11/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <div><h1 class="mume-header" id="20181112-%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B31">2018/11/12 &#x30DE;&#x30A4;&#x30B3;&#x30F3;1</h1>
+
+<h2 class="mume-header" id="issue">issue</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> &#x8AB2;&#x984C;5&#x306E;&#x30EC;&#x30A4;&#x30A2;&#x30A6;&#x30C8;&#x5D29;&#x308C;</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> &#x8868;&#x7D19;&#x306E;&#x30DF;&#x30B9;</li>
+</ul>
+<h2 class="mume-header" id="%E7%9B%AE%E7%9A%84">&#x76EE;&#x7684;</h2>
+
+<p>&#x4ECA;&#x56DE;&#x306F;&#xFF0C;&#x524D;&#x5B66;&#x671F;&#x306E;&#x30DE;&#x30A4;&#x30AF;&#x30ED;&#x30B3;&#x30F3;&#x30D4;&#x30E5;&#x30FC;&#x30BF;&#x57FA;&#x790E;&#x3067;&#x884C;&#x3063;&#x305F;&#x30A2;&#x30BB;&#x30F3;&#x30D6;&#x30EA;&#x8A00;&#x8A9E;&#x306E;&#x5FA9;&#x7FD2;&#x3092;&#x884C;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+&#x4ECA;&#x56DE;&#x5FA9;&#x7FD2;&#x3059;&#x308B;&#x306E;&#x306F;&#xFF0C;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x8EE2;&#x9001;&#xFF0C;&#x30EB;&#x30FC;&#x30D7;&#xFF0C;&#x6761;&#x4EF6;&#x5206;&#x5C90;&#xFF0C;LED&#x306E;&#x5236;&#x5FA1;&#x3067;&#x3059;&#x3002;</p>
+<h2 class="mume-header" id="%E4%BD%BF%E7%94%A8%E8%A3%85%E7%BD%AE">&#x4F7F;&#x7528;&#x88C5;&#x7F6E;</h2>
+
+<p>MT-Z&#x3092;&#x7528;&#x3044;&#x308B;</p>
+<h2 class="mume-header" id="%E5%AE%9F%E9%A8%93">&#x5B9F;&#x9A13;</h2>
+
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C1">&#x8AB2;&#x984C;1</h3>
+
+<p>8500H&#x306E;&#x6570;&#x5024;&#x306B;5&#x3092;&#x8DB3;&#x3057;&#x305F;&#x6570;&#x5024;&#x3092;&#xFF0C;8501H&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x3080;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.1&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8400</td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3A 00 85</td>
+<td>LD A, (8500H)</td>
+<td>8500H&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8403</td>
+<td>C6 5</td>
+<td>ADD A, 05H</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x306B;5&#x3092;&#x8DB3;&#x3059;</td>
+</tr>
+<tr>
+<td>8405</td>
+<td>32 01 85</td>
+<td>LD (8501H), A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;8501H&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8408</td>
+<td>C3 00 00</td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td></td>
+<td>ORG 8500H</td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td>1</td>
+<td>DB 01H</td>
+<td>01H&#x3092;&#x5165;&#x308C;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+<tr>
+<td>8501</td>
+<td>0</td>
+<td>END</td>
+<td>&#x4EEE;&#x306B;0H&#x3092;&#x5165;&#x308C;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.1 &#x8AB2;&#x984C;1</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C2">&#x8AB2;&#x984C;2</h3>
+
+<p>8500H&#x3068;8501H&#x306E;&#x6570;&#x5024;&#x3092;&#x8DB3;&#x3057;&#x305F;&#x6570;&#x5024;&#x3092;8502H&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x3080;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.2&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3A 00 85</td>
+<td>LD A, (8500H)</td>
+<td>8500H&#x306E;&#x5185;&#x5BB9;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8403</td>
+<td>47</td>
+<td>LD B, A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5185;&#x5BB9;&#x3092;B&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>3A 01 85</td>
+<td>LD A, (8501H)</td>
+<td>8501H&#x306E;&#x5185;&#x5BB9;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8407</td>
+<td>80</td>
+<td>ADD A, B</td>
+<td>A&#x306B;B&#x3092;&#x52A0;&#x3048;&#x308B;</td>
+</tr>
+<tr>
+<td>8408</td>
+<td>32 02 85</td>
+<td>LD (8502H), A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5185;&#x5BB9;&#x3092;8502H&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>840b</td>
+<td>C3 00 00</td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td></td>
+<td>ORG 8500H</td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td>1</td>
+<td>DB 01H</td>
+<td>01H&#x3092;&#x5165;&#x308C;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+<tr>
+<td>8501</td>
+<td>2</td>
+<td>DB 02H</td>
+<td>02H&#x3092;&#x5165;&#x308C;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+<tr>
+<td>8502</td>
+<td>0</td>
+<td>DB 00H</td>
+<td>&#x4EEE;&#x306B;0&#x3092;&#x5165;&#x308C;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.2 &#x8AB2;&#x984C;2</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C3">&#x8AB2;&#x984C;3</h3>
+
+<p>8500H&#x3068;8501H&#x306E;&#x6570;&#x5024;&#x3092;&#x6BD4;&#x8F03;&#x3057;&#xFF0C;&#x5927;&#x304D;&#x3044;&#x65B9;&#x3092;8502H&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x3080;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;</p>
+<ul>
+<li>&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6BD4;&#x8F03;&#x3059;&#x308B;&#x3068;&#x304D;&#x306B;&#x306F;<code>CP</code>&#x3092;&#x4F7F;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+&#x6BD4;&#x8F03;&#x3057;&#x305F;&#x7D50;&#x679C;&#x306F;&#x30D5;&#x30E9;&#x30B0;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x4FDD;&#x5B58;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306E;&#x4EFB;&#x610F;&#x306E;&#x5834;&#x6240;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;&#x3059;&#x308B;&#x3068;&#x304D;&#x306F;<code>JP</code>&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+<code>JP &#x756A;&#x5730;</code>&#x3067;&#x7121;&#x6761;&#x4EF6;&#x306B;&#x4EFB;&#x610F;&#x306E;&#x756A;&#x5730;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;&#x3057;&#xFF0C;<code>JP X &#x756A;&#x5730;</code>&#x3067;&#x30D5;&#x30E9;&#x30B0;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x304C;<code>X</code>&#x306E;&#x6642;&#x306B;&#x4EFB;&#x610F;&#x306E;&#x756A;&#x5730;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+</ul>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.3&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30E9;&#x30D9;&#x30EB;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8400</td>
+<td></td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3A 00 85</td>
+<td></td>
+<td>LD A, (8500H)</td>
+<td>8500H&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8403</td>
+<td>47</td>
+<td></td>
+<td>LD B, A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;B&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>3A 01 85</td>
+<td></td>
+<td>LD A, (8501H)</td>
+<td>8501H&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8407</td>
+<td>B8</td>
+<td></td>
+<td>CP B</td>
+<td>B&#x3068;&#x6BD4;&#x8F03;</td>
+</tr>
+<tr>
+<td>8408</td>
+<td>F2 12 84</td>
+<td></td>
+<td>JP P, MORE</td>
+<td>&#x30D5;&#x30E9;&#x30B0;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x304C;&#x6B63;&#x306A;&#x3089;&#x3070;MORE&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>840b</td>
+<td>78</td>
+<td></td>
+<td>LD A, B</td>
+<td>B&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>840c</td>
+<td>32 02 85</td>
+<td></td>
+<td>LD (8502H), A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;8502H&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>840f</td>
+<td>C3 00 00</td>
+<td></td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8412</td>
+<td>32 02 85</td>
+<td>MORE:</td>
+<td>LD (8502H), A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;8502H&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8415</td>
+<td>C3 00 00</td>
+<td></td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td></td>
+<td></td>
+<td>ORG 8500H</td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td>1</td>
+<td></td>
+<td>DB 01H</td>
+<td>01H&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+<tr>
+<td>8501</td>
+<td>3</td>
+<td></td>
+<td>DB 03H</td>
+<td>03H&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+<tr>
+<td>8502</td>
+<td>0</td>
+<td></td>
+<td>DB 00H</td>
+<td>&#x4EEE;&#x306B;00H&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.3 &#x8AB2;&#x984C;3</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C4">&#x8AB2;&#x984C;4</h3>
+
+<p>10&#x304B;&#x3089;1&#x305A;&#x3064;&#x5F15;&#x3044;&#x3066;&#x3044;&#x304D;&#xFF0C;5&#x4EE5;&#x4E0B;&#x306B;&#x306A;&#x3063;&#x305F;&#x5834;&#x5408;&#x7D42;&#x4E86;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;</p>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.4&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30E9;&#x30D9;&#x30EB;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8400</td>
+<td></td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3A 00 85</td>
+<td></td>
+<td>LD A, (8500H)</td>
+<td>8500H&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8403</td>
+<td>3D</td>
+<td>LOOP:</td>
+<td>DEC A</td>
+<td>A&#x304B;&#x3089;1&#x3092;&#x5F15;&#x304F;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>FE 05</td>
+<td></td>
+<td>CP 05H</td>
+<td>05H&#x3068;&#x6BD4;&#x8F03;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>8406</td>
+<td>C2 02 84</td>
+<td></td>
+<td>JP NZ, LOOP</td>
+<td>&#x30D5;&#x30E9;&#x30B0;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x304C;NZ&#x306A;&#x3089;&#x3070;LOOP&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8409</td>
+<td>32 00 85</td>
+<td></td>
+<td>LD (8500H), A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;8500H&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>840C</td>
+<td>C3 00 00</td>
+<td></td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8412</td>
+<td></td>
+<td></td>
+<td>END</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td></td>
+<td></td>
+<td>ORG 8500</td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td>0A</td>
+<td></td>
+<td>DB 0AH</td>
+<td>0AH(10&#x9032;&#x6570;&#x3067;10)&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.4 &#x8AB2;&#x984C;4</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C5">&#x8AB2;&#x984C;5</h3>
+
+<p>&#x56F3;1.2&#x3092;&#x53C2;&#x8003;&#x306B;1-10&#x306E;&#x548C;&#x3092;&#x30E1;&#x30E2;&#x30EA;&#x306E;8500H&#x756A;&#x5730;&#x306B;&#x66F8;&#x304D;&#x8FBC;&#x3080;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;</p>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.5&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30E9;&#x30D9;&#x30EB;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8400</td>
+<td></td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3E 00</td>
+<td></td>
+<td>LD A, 0</td>
+<td>0H&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>8402</td>
+<td>06 0A</td>
+<td></td>
+<td>LD B, 0A</td>
+<td>0AH&#x3092;B&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>80</td>
+<td>LOOP:</td>
+<td>ADD A, B</td>
+<td>A&#x306B;B&#x3092;&#x52A0;&#x3048;&#x308B;</td>
+</tr>
+<tr>
+<td>8405</td>
+<td>5</td>
+<td></td>
+<td>DEC B</td>
+<td>B&#x304B;&#x3089;1&#x3092;&#x5F15;&#x304F;</td>
+</tr>
+<tr>
+<td>8406</td>
+<td>C2 04 84</td>
+<td></td>
+<td>JP NZ, LOOP:</td>
+<td>&#x30D5;&#x30E9;&#x30B0;&#x304C;0&#x3058;&#x3083;&#x306A;&#x3044;&#x306A;&#x3089;&#x3070;LOOP&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8409</td>
+<td>32 00 85</td>
+<td></td>
+<td>LD (8500H), A</td>
+<td>A&#x3092;8500&#x306B;&#x30ED;&#x30FC;&#x30C9;</td>
+</tr>
+<tr>
+<td>840C</td>
+<td>C3 00 00</td>
+<td></td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>END</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>ORG 8500H</td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td>0</td>
+<td></td>
+<td>DB 01H</td>
+<td>&#x4EEE;&#x306B;00H&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x304A;&#x304F;</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.5 &#x8AB2;&#x984C;5</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C6">&#x8AB2;&#x984C;6</h3>
+
+<p>LED&#x3092;&#x5168;&#x3066;&#x70B9;&#x706F;&#x3055;&#x305B;&#x306A;&#x3055;&#x3044;<br>
+<br>
+&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.6&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td></td>
+<td>PB EQU 05H</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td>CTL EQU 07H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>90</td>
+<td></td>
+<td>CLWD EQU 90H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3E 90</td>
+<td>LD A, CLWD</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8402</td>
+<td>D3 07</td>
+<td>OUT (CTL), A</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>3A 00 85</td>
+<td>LD A, (8500A)</td>
+<td>8500H&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8407</td>
+<td>D3 05</td>
+<td>OUT (PB), A</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306B;A&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8409</td>
+<td>C3 00 00</td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td></td>
+<td>ORG 8500H</td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td>FF</td>
+<td>DB FFH</td>
+<td>FFH&#x3092;&#x4E88;&#x3081;&#x5165;&#x529B;&#x3057;&#x3066;&#x304A;&#x304F;&#x3002;</td>
+</tr>
+<tr>
+<td>8501</td>
+<td></td>
+<td>END</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.6 &#x8AB2;&#x984C;6</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C7">&#x8AB2;&#x984C;7</h3>
+
+<p>LED&#x4E00;&#x3064;&#x304A;&#x304D;&#x306B;&#x70B9;&#x706F;&#x3055;&#x305B;&#x306A;&#x3055;&#x3044;</p>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.7&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td></td>
+<td>PB EQU 05H</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td>CTL EQU 07H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>90</td>
+<td></td>
+<td>CLWD EQU 90H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3E 90</td>
+<td>LD A, CLWD</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8402</td>
+<td>D3 07</td>
+<td>OUT (CTL), A</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>3A 00 85</td>
+<td>LD A, (8500A)</td>
+<td>8500H&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8407</td>
+<td>D3 05</td>
+<td>OUT (PB), A</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306B;A&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8409</td>
+<td>C3 00 00</td>
+<td>JP 0000H</td>
+<td>&#x30E2;&#x30CB;&#x30BF;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td></td>
+<td>ORG 8500H</td>
+<td></td>
+</tr>
+<tr>
+<td>8500</td>
+<td>AA</td>
+<td>DB AAH</td>
+<td>AAH&#x3092;&#x4E88;&#x3081;&#x5165;&#x529B;&#x3057;&#x3066;&#x304A;&#x304F;&#x3002;</td>
+</tr>
+<tr>
+<td>8501</td>
+<td></td>
+<td>END</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.7 &#x8AB2;&#x984C;7</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C8">&#x8AB2;&#x984C;8</h3>
+
+<p>LED&#x306E;&#x4E00;&#x3064;&#x304A;&#x304D;&#x306E;&#x70B9;&#x706F;&#x304C;&#x53CD;&#x8EE2;&#x3092;&#x7E70;&#x308A;&#x8FD4;&#x3059;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;</p>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.8&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30E9;&#x30D9;&#x30EB;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td>PB EQU 05H</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td>CTL EQU 07H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>90</td>
+<td></td>
+<td></td>
+<td>CLWD EQU 90H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td></td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3E 90</td>
+<td></td>
+<td>LD A, CLWD</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8402</td>
+<td>D3 07</td>
+<td></td>
+<td>OUT (CTL), A</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>3E AA</td>
+<td></td>
+<td>LD A, 08H</td>
+<td>&#x5024;08H&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8406</td>
+<td>D3 05</td>
+<td>SHIFT:</td>
+<td>OUT (PB), A</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8408</td>
+<td>EE FF</td>
+<td></td>
+<td>XOR FFH</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x3068;FFH&#x3068;&#x306E;&#x6392;&#x4ED6;&#x7684;&#x8AD6;&#x7406;&#x548C;&#x3092;&#x3068;&#x308B;</td>
+</tr>
+<tr>
+<td>840A</td>
+<td>CD 40 84</td>
+<td></td>
+<td>CALL TIMER</td>
+<td>&#x30BF;&#x30A4;&#x30DE;&#x30FC;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;</td>
+</tr>
+<tr>
+<td>840D</td>
+<td>C3 06 84</td>
+<td></td>
+<td>JP SHIFT</td>
+<td>&#x30B7;&#x30D5;&#x30C8;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8440</td>
+<td></td>
+<td></td>
+<td>ORG 8440H</td>
+<td></td>
+</tr>
+<tr>
+<td>8440</td>
+<td>21 00 40</td>
+<td>TIMER:</td>
+<td>LD HL, 4000H</td>
+<td>&#x5024;400H&#x3092;HL&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8443</td>
+<td>5F</td>
+<td></td>
+<td>LD E, A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;E&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8444</td>
+<td>2B</td>
+<td>TLOOP:</td>
+<td>DEC HL</td>
+<td>HL&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x304B;&#x3089;&#xFF11;&#x3092;&#x5F15;&#x304F;</td>
+</tr>
+<tr>
+<td>8445</td>
+<td>7C</td>
+<td></td>
+<td>LD A, H</td>
+<td>H&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8446</td>
+<td>B5</td>
+<td></td>
+<td>OR L</td>
+<td>A&#x306E;&#x5024;&#x3068;L&#x306E;&#x5024;&#x306E;&#x8AD6;&#x7406;&#x548C;&#x3092;&#x3068;&#x308B;</td>
+</tr>
+<tr>
+<td>8447</td>
+<td>20 FB</td>
+<td></td>
+<td>JR NZ, TLOOP</td>
+<td>&#x30D5;&#x30E9;&#x30B0;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x304C;NZ&#x306A;&#x3089;&#x3070;TLOOP&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8449</td>
+<td>7B</td>
+<td></td>
+<td>LD A,E</td>
+<td>E&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>844A</td>
+<td>C9</td>
+<td></td>
+<td>RET</td>
+<td>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x7D42;&#x4E86;</td>
+</tr>
+<tr>
+<td>844B</td>
+<td></td>
+<td></td>
+<td>END</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.8 &#x8AB2;&#x984C;8</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C9">&#x8AB2;&#x984C;9</h3>
+
+<p>&#x56F3;1.3&#x3092;&#x53C2;&#x8003;&#x306B;LED&#x306E;&#x70B9;&#x706F;&#x4F4D;&#x7F6E;&#x304C;&#x5DE6;&#x306B;&#x30B7;&#x30D5;&#x30C8;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;</p>
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.9&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x30A2;&#x30C9;&#x30EC;&#x30B9;</th>
+<th>&#x6A5F;&#x68B0;&#x8A9E;</th>
+<th>&#x30E9;&#x30D9;&#x30EB;</th>
+<th>&#x30CB;&#x30FC;&#x30E2;&#x30CB;&#x30C3;&#x30AF;</th>
+<th>&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td>PB EQU 05H</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td>CTL EQU 07H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</td>
+</tr>
+<tr>
+<td>90</td>
+<td></td>
+<td></td>
+<td>CLWD EQU 90H</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td></td>
+<td></td>
+<td>ORG 8400H</td>
+<td></td>
+</tr>
+<tr>
+<td>8400</td>
+<td>3E 90</td>
+<td></td>
+<td>LD A, CLWD</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30EF;&#x30FC;&#x30C9;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8402</td>
+<td>D3 07</td>
+<td></td>
+<td>OUT (CTL), A</td>
+<td>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8404</td>
+<td>3E 01</td>
+<td></td>
+<td>LD A, 01H</td>
+<td>&#x5024;08H&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8406</td>
+<td>D3 05</td>
+<td>SHIFT:</td>
+<td>OUT (PB), A</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8408</td>
+<td>7</td>
+<td></td>
+<td>RLCA</td>
+<td>A&#x306E;&#x5185;&#x5BB9;&#x3092;&#x5DE6;&#x306B;&#x30B7;&#x30D5;&#x30C8;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>8409</td>
+<td>CD 40 84</td>
+<td></td>
+<td>CALL TIMER</td>
+<td>&#x30BF;&#x30A4;&#x30DE;&#x30FC;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;</td>
+</tr>
+<tr>
+<td>840C</td>
+<td>C3 06 84</td>
+<td></td>
+<td>JP SHIFT</td>
+<td>&#x30B7;&#x30D5;&#x30C8;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8440</td>
+<td></td>
+<td></td>
+<td>ORG 8440H</td>
+<td></td>
+</tr>
+<tr>
+<td>8440</td>
+<td>21 00 40</td>
+<td>TIMER:</td>
+<td>LD HL, 4000H</td>
+<td>&#x5024;400H&#x3092;HL&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8443</td>
+<td>5F</td>
+<td></td>
+<td>LD E, A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;E&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8444</td>
+<td>2B</td>
+<td>TLOOP:</td>
+<td>DEC HL</td>
+<td>HL&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x304B;&#x3089;&#xFF11;&#x3092;&#x5F15;&#x304F;</td>
+</tr>
+<tr>
+<td>8445</td>
+<td>7C</td>
+<td></td>
+<td>LD A, H</td>
+<td>H&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8446</td>
+<td>B5</td>
+<td></td>
+<td>OR L</td>
+<td>A&#x306E;&#x5024;&#x3068;L&#x306E;&#x5024;&#x306E;&#x8AD6;&#x7406;&#x548C;&#x3092;&#x3068;&#x308B;</td>
+</tr>
+<tr>
+<td>8447</td>
+<td>20 FB</td>
+<td></td>
+<td>JR NZ, TLOOP</td>
+<td>&#x30D5;&#x30E9;&#x30B0;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x304C;NZ&#x306A;&#x3089;&#x3070;TLOOP&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8449</td>
+<td>7B</td>
+<td></td>
+<td>LD A,E</td>
+<td>E&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>844A</td>
+<td>C9</td>
+<td></td>
+<td>RET</td>
+<td>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x7D42;&#x4E86;</td>
+</tr>
+<tr>
+<td>844B</td>
+<td></td>
+<td></td>
+<td>END</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.9 &#x8AB2;&#x984C;9</div>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C10">&#x8AB2;&#x984C;10</h3>
+
+<p>LED&#x306E;&#x70B9;&#x706F;&#x4F4D;&#x7F6E;&#x304C;&#xFF0C;&#x306F;&#x3058;&#x3081;&#x306B;&#x5DE6;&#x306B;&#x30B7;&#x30D5;&#x30C8;&#x3057;&#xFF0C;&#x5DE6;&#x7AEF;&#x306B;&#x304D;&#x305F;&#x3089;&#x53F3;&#x306B;&#x30B7;&#x30D5;&#x30C8;&#xFF0C;&#x53F3;&#x7AEF;&#x306B;&#x304D;&#x305F;&#x3089;&#x5DE6;&#x306B;&#x30B7;&#x30D5;&#x30C8;&#x3059;&#x308B;&#x3088;&#x3046;&#x306A;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x4F5C;&#x308A;&#x306A;&#x3055;&#x3044;&#x3002;<br>
+&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x56F3;1.10&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>8402</th>
+<th>D3 07</th>
+<th></th>
+<th>OUT (CTL), A</th>
+<th>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30EB;&#x30DD;&#x30FC;&#x30C8;&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8404</td>
+<td>3E 01</td>
+<td></td>
+<td>LD A, 01H</td>
+<td>&#x5024;08H&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8406</td>
+<td>D3 05</td>
+<td>SHIFTL:</td>
+<td>OUT (PB), A</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8408</td>
+<td>BF 80</td>
+<td></td>
+<td>CP 80H</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x3068;80H&#x3092;&#x6BD4;&#x8F03;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>840A</td>
+<td>CA 17 84</td>
+<td></td>
+<td>JP Z, SHIFTR</td>
+<td>0&#x306A;&#x3089;&#x3070;&#x53F3;&#x30B7;&#x30D5;&#x30C8;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>840D</td>
+<td>C2 10 84</td>
+<td></td>
+<td>JP NZ, NEXT</td>
+<td>0&#x3058;&#x3083;&#x306A;&#x3051;&#x308C;&#x3070;&#x6B21;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8410</td>
+<td>7</td>
+<td>NEXT:</td>
+<td>RLCA</td>
+<td>A&#x306E;&#x5185;&#x5BB9;&#x3092;&#x5DE6;&#x306B;&#x30B7;&#x30D5;&#x30C8;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>8411</td>
+<td>CD 40 84</td>
+<td></td>
+<td>CALL TIMER</td>
+<td>&#x30BF;&#x30A4;&#x30DE;&#x30FC;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;</td>
+</tr>
+<tr>
+<td>8414</td>
+<td>C2 06 84</td>
+<td></td>
+<td>JP NZ, SHIFTL</td>
+<td>0&#x3058;&#x3083;&#x306A;&#x3051;&#x308C;&#x3070;&#x5DE6;&#x30B7;&#x30D5;&#x30C8;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8417</td>
+<td>D3 05</td>
+<td>SHIFTR:</td>
+<td>OUT (PB), A</td>
+<td>&#x30DD;&#x30FC;&#x30C8;B&#x306B;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;&#x51FA;&#x529B;</td>
+</tr>
+<tr>
+<td>8419</td>
+<td>BF 01</td>
+<td></td>
+<td>CP 01H</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x3068;01H&#x3068;&#x6BD4;&#x8F03;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>841B</td>
+<td>CA 06 84</td>
+<td></td>
+<td>JP Z, SHIFTL</td>
+<td>0&#x306A;&#x3089;&#x3070;&#x5DE6;&#x30B7;&#x30D5;&#x30C8;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>841E</td>
+<td>C2 21 84</td>
+<td></td>
+<td>JP NZ, NEXT</td>
+<td>0&#x3058;&#x3083;&#x306A;&#x3051;&#x308C;&#x3070;&#x6B21;&#x306E;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8421</td>
+<td>0F</td>
+<td>NEXT:</td>
+<td>RRCA</td>
+<td>A&#x306E;&#x5185;&#x5BB9;&#x3092;&#x53F3;&#x306B;&#x30B7;&#x30D5;&#x30C8;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>8422</td>
+<td>CD 40 84</td>
+<td></td>
+<td>CALL TIMER</td>
+<td>&#x30BF;&#x30A4;&#x30DE;&#x30FC;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;</td>
+</tr>
+<tr>
+<td>8425</td>
+<td>C2 17 84</td>
+<td></td>
+<td>JP NZ, SHIFTR</td>
+<td>0&#x3058;&#x3083;&#x306A;&#x3051;&#x308C;&#x3070;&#x53F3;&#x30B7;&#x30D5;&#x30C8;&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8440</td>
+<td></td>
+<td></td>
+<td>ORG 8440H</td>
+<td></td>
+</tr>
+<tr>
+<td>8440</td>
+<td>21 00 40</td>
+<td>TIMER:</td>
+<td>LD HL, 4000H</td>
+<td>&#x5024;400H&#x3092;HL&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8443</td>
+<td>5F</td>
+<td></td>
+<td>LD E, A</td>
+<td>A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;E&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8444</td>
+<td>2B</td>
+<td>TLOOP:</td>
+<td>DEC HL</td>
+<td>HL&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x304B;&#x3089;&#xFF11;&#x3092;&#x5F15;&#x304F;</td>
+</tr>
+<tr>
+<td>8445</td>
+<td>7C</td>
+<td></td>
+<td>LD A, H</td>
+<td>H&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>8446</td>
+<td>B5</td>
+<td></td>
+<td>OR L</td>
+<td>A&#x306E;&#x5024;&#x3068;L&#x306E;&#x5024;&#x306E;&#x8AD6;&#x7406;&#x548C;&#x3092;&#x3068;&#x308B;</td>
+</tr>
+<tr>
+<td>8447</td>
+<td>20 FB</td>
+<td></td>
+<td>JR NZ, TLOOP</td>
+<td>&#x30D5;&#x30E9;&#x30B0;&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x304C;NZ&#x306A;&#x3089;&#x3070;TLOOP&#x306B;&#x30B8;&#x30E3;&#x30F3;&#x30D7;</td>
+</tr>
+<tr>
+<td>8449</td>
+<td>7B</td>
+<td></td>
+<td>LD A,E</td>
+<td>E&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306E;&#x5024;&#x3092;A&#x30EC;&#x30B8;&#x30B9;&#x30BF;&#x306B;&#x8EE2;&#x9001;</td>
+</tr>
+<tr>
+<td>844A</td>
+<td>C9</td>
+<td></td>
+<td>RET</td>
+<td>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x7D42;&#x4E86;</td>
+</tr>
+<tr>
+<td>844B</td>
+<td></td>
+<td></td>
+<td>END</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">&#x56F3;1.10 &#x8AB2;&#x984C;10</div>
+<h2 class="mume-header" id="%E8%80%83%E5%AF%9F%E8%AA%B2%E9%A1%8C">&#x8003;&#x5BDF;&#x8AB2;&#x984C;</h2>
+
+<h3 class="mume-header" id="%E8%80%83%E5%AF%9F%E8%AA%B2%E9%A1%8C1">&#x8003;&#x5BDF;&#x8AB2;&#x984C;1</h3>
+
+<p>&#x30A2;&#x30BB;&#x30F3;&#x30D6;&#x30EA;&#x8A00;&#x8A9E;&#x306F;&#x4F4E;&#x7D1A;&#x8A00;&#x8A9E;&#x3068;&#x3044;&#x308F;&#x308C;&#x3066;&#x3044;&#x308B;&#x3002;<br>
+&#x5B9A;&#x4F11;&#x8A00;&#x8A9E;&#x3068;&#x306F;&#x306A;&#x306B;&#x304B;&#x5831;&#x544A;&#x3057;&#x306A;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x4F4E;&#x7D1A;&#x8A00;&#x8A9E;&#x3068;&#x306F;&#x6A5F;&#x68B0;&#x8A9E;&#x306B;&#x8FD1;&#x3044;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x8A00;&#x8A9E;&#x306E;&#x3053;&#x3068;&#x3067;&#x3042;&#x308B;&#x3002;<br>
+&#x4EBA;&#x9593;&#x306E;&#x4F7F;&#x3046;&#x8A00;&#x8A9E;&#x3068;&#x306F;&#x7A0B;&#x9060;&#x304F;&#xFF0C;&#x6A5F;&#x68B0;&#x8A9E;&#x306B;&#x8FD1;&#x3044;&#x3002;</p>
+<h3 class="mume-header" id="%E8%80%83%E5%AF%9F%E8%AA%B2%E9%A1%8C2">&#x8003;&#x5BDF;&#x8AB2;&#x984C;2</h3>
+
+<p>&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x8A00;&#x8A9E;&#x306B;&#x306F;&#x9AD8;&#x7D1A;&#x8A00;&#x8A9E;&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;&#x3082;&#x306E;&#x304C;&#x3042;&#x308B;&#x3002;<br>
+&#x9AD8;&#x7D1A;&#x8A00;&#x8A9E;&#x3068;&#x306F;&#x306A;&#x306B;&#x304B;&#x5831;&#x544A;&#x3057;&#x306A;&#x3055;&#x3044;&#x3002;<br>
+&#x307E;&#x305F;&#xFF0C;&#x9AD8;&#x7D1A;&#x8A00;&#x8A9E;&#x306E;&#x4F8B;&#x3092;2&#x3064;&#x5831;&#x544A;&#x3057;&#xFF0C;&#x305D;&#x308C;&#x305E;&#x308C;&#x306E;&#x8A00;&#x8A9E;&#x304C;&#x4E3B;&#x306B;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x7528;&#x9014;&#x3067;&#x4F7F;&#x308F;&#x308C;&#x308B;&#x304B;&#x306A;&#x3069;&#x306E;&#x7279;&#x5FB4;&#x3082;&#x5831;&#x544A;&#x3057;&#x306A;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x82F1;&#x5358;&#x8A9E;&#x7B49;&#x304C;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x3066;&#x304A;&#x308A;&#x4EBA;&#x9593;&#x306E;&#x4F7F;&#x3046;&#x8A00;&#x8A9E;&#x306B;&#x8FD1;&#x3044;&#x3002;<br>
+&#x30B3;&#x30F3;&#x30D1;&#x30A4;&#x30E9;&#x3084;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30D7;&#x30EA;&#x30BF;&#x3067;&#x6A5F;&#x68B0;&#x8A9E;&#x306B;&#x5909;&#x63DB;&#x3055;&#x308C;&#x308B;&#x3002;</p>
+<h4 class="mume-header" id="%E4%BE%8B1">&#x4F8B;1</h4>
+
+<p>COBOL<br>
+Common Business Oriented Language&#x306E;&#x3053;&#x3068;</p>
+<p>&#x79C1;&#x304C;&#x601D;&#x3046;&#x6700;&#x521D;&#x306E;&#x9AD8;&#x7D1A;&#x8A00;&#x8A9E;&#x3002;<br>
+&#x30B0;&#x30EC;&#x30FC;&#x30B9;&#x30FB;&#x30DB;&#x30C3;&#x30D1;&#x30FC;&#x306E;&#x7406;&#x5FF5;&#x3068;&#x3057;&#x3066;&#x300C;&#x6A5F;&#x68B0;&#x8A9E;&#x3067;&#x306F;&#x306A;&#x304F;&#x3001;&#x82F1;&#x8A9E;&#x306B;&#x8FD1;&#x3044;&#x8A00;&#x8A9E;&#x306B;&#x3088;&#x3063;&#x3066;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308B;&#x3079;&#x304D;&#x3067;&#x3042;&#x308B;&#x300D;&#x304C;&#x3042;&#x308A;&#xFF0C;&#x305D;&#x3053;&#x304B;&#x3089;&#x8A95;&#x751F;&#x3057;&#x305F;&#x3002;<br>
+&#x672A;&#x3060;&#x306B;&#x9280;&#x884C;&#x7B49;&#x306E;&#x4E8B;&#x52D9;&#x51E6;&#x7406;&#x3067;&#x4F7F;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3002;<br>
+helloworld&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x56F3;2.1.1&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>000010 IDENTIFICATION                   DIVISION.
+000020 PROGRAM-ID.                      SAMPLE-01.
+000030*
+000040 ENVIRONMENT                      DIVISION.
+000050*
+000060 DATA                             DIVISION.
+000070*
+000080 PROCEDURE                        DIVISION.
+000090 MAIN.
+000100     DISPLAY &quot;Hello world!&quot;  UPON CONSOLE.
+000110     STOP RUN.
+</code></pre><div style="text-align:center;">&#x56F3;2.1.1 helloworld</div>
+<p>&#x51FA;&#x529B;&#x7D50;&#x679C;&#x3092;&#x56F3;2.2.2&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>Hello world!
+</code></pre><div style="text-align:center;">&#x56F3;2.1.2 output</div>
+<h4 class="mume-header" id="%E4%BE%8B2">&#x4F8B;2</h4>
+
+<p>Brainfuck &#x307E;&#x305F;&#x306F; Brainf*ck</p>
+<p>&#x53EF;&#x8AAD;&#x6027;&#x306F;&#x4F4E;&#x3044;&#x3002;<br>
+&#x30C1;&#x30E5;&#x30FC;&#x30EA;&#x30F3;&#x30B0;&#x5B8C;&#x5168;&#x306A;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x8A00;&#x8A9E;&#x3002;<br>
+&#x30DD;&#x30A4;&#x30F3;&#x30BF;&#x3068;&#x5165;&#x529B;&#x3092;&#x6271;&#x3046;8&#x3064;&#x306E;&#x547D;&#x4EE4;&#x306B;&#x3088;&#x3063;&#x3066;&#x6210;&#x7ACB;&#x3057;&#x3066;&#x3044;&#x308B;&#x3002;<br>
+&#x30B3;&#x30F3;&#x30D1;&#x30A4;&#x30E9;&#x3092;&#x7528;&#x3044;&#x3066;&#x6A5F;&#x68B0;&#x8A9E;&#x306B;&#x7FFB;&#x8A33;&#x3059;&#x308B;&#x3002;<br>
+helloworld&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x56F3;2.2.1&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>&gt;+++++++++[&lt;++++++++&gt;-]&lt;.&gt;+++++++[&lt;++++&gt;-]&lt;+.+++++++..+++.[-]&gt;++++++++[&lt;++
+++&gt;-]&lt;.&gt;+++++++++++[&lt;+++++&gt;-]&lt;.&gt;++++++++[&lt;+++&gt;-]&lt;.+++.------.--------.[-]&gt;
+++++++++[&lt;++++&gt;-]&lt;+.[-]++++++++++.
+</code></pre><div style="text-align:center;">&#x56F3;2.2.1 helloworld</div>
+<p>&#x51FA;&#x529B;&#x7D50;&#x679C;&#x3092;&#x56F3;2.2.2&#x306B;&#x793A;&#x3059;&#x3002;</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>Hello World!
+</code></pre><div style="text-align:center;">&#x56F3;2.2.2 output</div>
+</div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
