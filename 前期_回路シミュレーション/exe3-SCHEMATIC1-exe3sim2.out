@@ -1,0 +1,73 @@
+
+**** 11/12/18 16:01:47 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-exe3sim2"  [ W:\jkjs\exe3-schematic1-exe3sim2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exe3-schematic1-exe3sim2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1.04 1.0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\exe3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING exe3-SCHEMATIC1.net ****
+* source EXE3
+C_C1         0 N00158  2u   
+L_L1         N00158 N00131  2  
+R_R1         N00131 N00097  140  
+V_V2         N00097 0  
++SIN 0 100 79.58 0 0 0
+
+**** RESUMING exe3-schematic1-exe3sim2.sim.cir ****
+.END
+
+**** 11/12/18 16:01:47 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-exe3sim2"  [ W:\jkjs\exe3-schematic1-exe3sim2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00097)    0.0000 (N00131)    0.0000 (N00158)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

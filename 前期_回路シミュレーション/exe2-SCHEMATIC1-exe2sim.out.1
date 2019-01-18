@@ -1,0 +1,42 @@
+
+**** 10/15/18 14:16:29 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-exe2sim"  [ w:\jkjs\exe2-SCHEMATIC1-exe2sim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exe2-SCHEMATIC1-exe2sim.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1.04 1.0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\exe2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING exe2-SCHEMATIC1.net ****
+* source EXE2
+V_V1         N00094 GND  
++SIN 0 10 100 0 0 0
+R_R1         N000371 N00094  0.1  
+C_C1         GND N000371  4.75mF   
+
+**** RESUMING exe2-SCHEMATIC1-exe2sim.sim.cir ****
+.END
+
+ERROR -- Node N00094 is floating
+ERROR -- Node GND is floating
+ERROR -- Node N000371 is floating

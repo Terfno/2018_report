@@ -1,0 +1,5 @@
+* source EXE3
+C_C1         0 N00158  2u   
+L_L1         N00158 N00131  2  
+R_R1         N00131 N00097  140  
+V_V3         N00097 0 DC 0Vdc AC 100 
