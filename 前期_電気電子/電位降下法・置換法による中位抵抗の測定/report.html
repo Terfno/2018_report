@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>report</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/terfno/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.5/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="20180702-%E9%9B%BB%E4%BD%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E7%BD%AE%E6%8F%9B%E6%B3%95%E3%81%AB%E3%82%88%E3%82%8B%E4%B8%AD%E4%BD%8D%E6%8A%B5%E6%8A%97%E3%81%AE%E6%B8%AC%E5%AE%9A">2018/07/02 電位降下法・置換法による中位抵抗の測定</h1>
+
+<h2 class="mume-header" id="issue">issue</h2>
+
+<ul>
+<li>
+<p>表番号，図番号が無い←解決 2018/07/16</p>
+<ul>
+<li>説明文が無い</li>
+<li>軸の単位(軸タイトル ラベル)が無い</li>
+</ul>
+</li>
+<li>
+<p>参考文献は参考にした箇所に参考文献番号を書く←解決 2018/07/16</p>
+<ul>
+<li>参考文献はページタイトル，URL，閲覧日時(年月日)</li>
+</ul>
+</li>
+<li>
+<p>表タイトルの修正←解決 2018/07/24</p>
+</li>
+<li>
+<p>参考文献番号を適当に←解決 2018/07/24</p>
+</li>
+</ul>
+<h2 class="mume-header" id="%E7%9B%AE%E7%9A%84">目的</h2>
+
+<p>実験を行ってデータを収集し整理する場合，守るべき原則や注意事項がある。</p>
+<p>この実験では数十から数百オームの中位抵抗の測定を通して次のことを確認する。</p>
+<ul>
+<li>アナログ計器の読み方(計器板の鏡の使い方，スケール切り替えの必要性)</li>
+<li>有効数字の取扱(データ読み取り時，計算時)</li>
+<li>計器の内部抵抗の影響</li>
+<li>表とグラフの書き方</li>
+</ul>
+<h2 class="mume-header" id="%E5%8E%9F%E7%90%86%E8%A7%A3%E8%AA%AC%E5%AE%9F%E9%A8%93%E6%96%B9%E6%B3%95">原理・解説・実験方法</h2>
+
+<h3 class="mume-header" id="%E5%9F%BA%E6%9C%AC%E4%BA%8B%E9%A0%85%E3%81%AE%E7%A2%BA%E8%AA%8D">基本事項の確認</h3>
+
+<p>実験を行ってデータを取る前に確認しておかなければならない事項がある。</p>
+<p>ここではその確認を行う。</p>
+<p>次の1〜3の確認事項を担当教員に必ずチェックしてもらうこと。</p>
+<ol>
+<li>アナログ計器板にある鏡の意味を理解する。(なぜ鏡があるのか)</li>
+<li>有効数字に注意しながら，次の2つのデータを使ってオームの法則により抵抗値を計算すると，抵抗値はいくらか。また，有効数字はいくらか。
+<ul>
+<li>ある抵抗に0.002[A]の電流が流れたとき，1.1[V]の電圧がかかっていた。</li>
+<li>ある抵抗に0.00211[A]の電流が流れたとき，1.1[V]の電圧がかかっていた。</li>
+</ul>
+</li>
+<li>上の2つの結果からなぜ針ができるだけ大きく振れるように計器のスケールを切り替える必要があるのか，なぜメモリの1/10まで目分量でデータをとらなければならないのか，理由を考えて説明せよ。</li>
+</ol>
+<h3 class="mume-header" id="%E7%BD%AE%E6%8F%9B%E6%B3%95%E3%81%AB%E3%82%88%E3%82%8B%E4%B8%AD%E4%BD%8D%E6%8A%B5%E6%8A%97%E3%81%AE%E6%B8%AC%E5%AE%9A">置換法による中位抵抗の測定</h3>
+
+<h4 class="mume-header" id="%E7%BD%AE%E6%8F%9B%E6%B3%95%E3%81%AB%E3%82%88%E3%82%8B%E6%B8%AC%E5%AE%9A%E3%81%AE%E5%8E%9F%E7%90%86">置換法による測定の原理</h4>
+
+<p>電源，保護抵抗，電流計，スイッチ，未知抵抗を接続し，スイッチを道抵抗側に倒し，電流を流す。</p>
+<p>ことのときの電流値Iを測定し，次にスイッチを既知抵抗に切り替えて電流を流す。</p>
+<p>既知抵抗側に切り替えて電流を流す。このとき既知抵抗の値を切り替えて調整することにより，電流計を流れる電流値の値を最初のIと同じにする。</p>
+<p>このとき未知抵抗の値Rxと既知抵抗Rは互いに等しくなり，Rxの値を知ることができる。</p>
+<h4 class="mume-header" id="%E5%AE%9F%E9%A8%93%E6%96%B9%E6%B3%95">実験方法</h4>
+
+<ol>
+<li>測定回路を実験書を参考にして構成する。置換法によって各未知抵抗の値を測定する。実験方法の詳細は測定の原理をもとに各自で考えること。ただし，測定値には必ず誤差が含まれるため，未知抵抗1個につき電流Iの値を3回(大，中，小)変えて測定し，その平均をとって真の抵抗値を推定すること。</li>
+<li>上記の1の測定値において，3回のうち1回の測定値が他の2回と著しく異なっていた場合，どのように処置したらよいか考え説明せよ。</li>
+<li>実際に上記の2に該当するデータが測定されていれば，2で考えた適切な処置を施すこと。</li>
+</ol>
+<h3 class="mume-header" id="%E9%9B%BB%E4%BD%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%AB%E3%82%88%E3%82%8B%E4%B8%AD%E4%BD%8D%E6%8A%B5%E6%8A%97%E3%81%AE%E6%B8%AC%E5%AE%9A">電位降下法による中位抵抗の測定</h3>
+
+<h4 class="mume-header" id="%E9%9B%BB%E4%BD%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%AB%E3%82%88%E3%82%8B%E6%B8%AC%E5%AE%9A%E3%81%AE%E5%8E%9F%E7%90%86">電位降下法による測定の原理</h4>
+
+<p>抵抗に電流を流すと電位降下が発生する。</p>
+<p>このとき，抵抗値R，電流値Iおよび電位降下の値Vの間でオームの法則が成り立つことがわかっている。</p>
+<blockquote>
+<p>V=RI</p>
+</blockquote>
+<p>したがって，未知抵抗を流れる電流の値と未知抵抗の両端で発生している電位降下の値を測定すれば，上式を使って未知抵抗の値を計算で求めることができる。</p>
+<p>電位降下法の測定回路は2つある。未知抵抗を流れる電流の値と未知抵抗の両端で発生している電位降下の値を測定するための回路としては，2つの種類が考えられるが，それぞれの回路では計器の内部抵抗の影響で，測定値が次の値となる。<br>
+</p>
+<ul>
+<li>Aの回路
+<ul>
+<li>電流計で測定された電流値は，電流計を流れる電流と道抵抗を流れる電流の和になっている。</li>
+</ul>
+</li>
+<li>Bの回路
+<ul>
+<li>電圧計で測定された電圧値は，電流計の内部抵抗による電位降下の値と道抵抗による電位降下の値の和になっている。</li>
+</ul>
+</li>
+</ul>
+<p>このため，A,Bの2つの回路とも，測定値をそのまま式に代入して計算したのでは未知抵抗の計算値と真の値との間に誤差が生じてしまう。</p>
+<p>そこで，Aの回路では</p>
+<blockquote>
+<p>Rx=V/(I-(V/rv))</p>
+</blockquote>
+<p>また，Bの回路では</p>
+<blockquote>
+<p>Rx=V/I-ra</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="" class="language-"><code>Rx:&#x672A;&#x77E5;&#x62B5;&#x6297;
+V:&#x96FB;&#x5727;
+I:&#x96FB;&#x6D41;
+rv:&#x96FB;&#x5727;&#x8A08;&#x306E;&#x5185;&#x90E8;&#x62B5;&#x6297;
+ra:&#x96FB;&#x6D41;&#x8A08;&#x306E;&#x5185;&#x90E8;&#x62B5;&#x6297;
+</code></pre><p>という補正式を使って未知抵抗の真の値Rxを推定する。</p>
+<p>ただし，測定値には必ず誤差がふくまれるため，複数個の測定値の組み合わせを使って，このRxを計算し，その平均値Rx'を求めて真の抵抗値を推定する。</p>
+<p>なお，このような補正を施したときの真の抵抗値Rx'に対する誤差率εは</p>
+<blockquote>
+<p>ε=((R-Rx')/Rx')*100 [%]</p>
+</blockquote>
+<p>を用いて計算する。</p>
+<h4 class="mume-header" id="%E5%AE%9F%E9%A8%93%E6%96%B9%E6%B3%95-1">実験方法</h4>
+
+<ol>
+<li>ディジタルテスタを使って使用する電流計と電圧計の内部抵抗値を調べる。<strong>内部抵抗の値は端子の組み合わせごとに値が異なるので</strong>実験で使用するすべての端子の組み合わせについて調べること。</li>
+<li>Aの測定回路を構成する。電圧計と電流計の端子の組み合わせを1V-1mAとする。</li>
+<li>各抵抗について，電流の値を段階的(大，中，小)に変えながら電圧値と電流値の組を3組測定する。測定する抵抗はNo.1~5まであるが，すべて測定すると時間が足らないと思われる場合は，最小値の抵抗を除く4種類の測定でも良い</li>
+<li>電圧計と電流計の組み合わせを1V-3mAに変更して3の測定を行う。</li>
+<li>電圧計と電流計の組み合わせを3V-3mAに変更して3の測定を行う。</li>
+<li>Bの測定回路を構成し，Aの回路と同様に3~5の測定を行う。</li>
+</ol>
+<h2 class="mume-header" id="%E5%AE%9F%E9%A8%93%E7%B5%90%E6%9E%9C">実験結果</h2>
+
+<p>実験結果として次の内容を報告する。</p>
+<ol>
+<li>置換法に関する実験結果をまとめた表(測定データと推定される真の抵抗値)</li>
+<li>電位降下法の実験で利用した各景気の内部抵抗値をまとめた表。</li>
+<li>電位降下法に関する実験結果をまとめた表。表1に示す形式で両方の回路と測定したすべての未知抵抗について報告すること。</li>
+<li>電位降下法の実験における道抵抗と誤差率の関係を表すグラフ。端子の組み合わせのち外による誤差率の違いを比較するグラフを端子の組み合わせ(1V-1mA,1V-3mA,3V-3mA)ごとに各1枚ずつ合計3枚報告すること。また，Aの回路に関する誤差率のグラフはすべて最小二乗法を使って描き，係数を計算した家庭も報告すること。グラフの横軸はRx'縦軸はε'(|ε|の平均値)とする。</li>
+</ol>
+<h3 class="mume-header" id="1-%E7%BD%AE%E6%8F%9B%E6%B3%95%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9F%E9%A8%93%E7%B5%90%E6%9E%9C%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%81%9F%E8%A1%A8">1 置換法に関する実験結果をまとめた表</h3>
+
+<div style="text-align:center;">表3.1 置換法に関する実験結果</div>
+<table>
+<thead>
+<tr>
+<th>未知抵抗</th>
+<th>電流値[mA]</th>
+<th>抵抗値(Rx) [Ω]</th>
+<th>平均抵抗値(Rx') [Ω]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>2.5</td>
+<td>100</td>
+<td>100</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>100</td>
+<td></td>
+</tr>
+<tr>
+<td>R2</td>
+<td>2.5</td>
+<td>120</td>
+<td>120</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>120</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>120</td>
+<td></td>
+</tr>
+<tr>
+<td>R3</td>
+<td>2.5</td>
+<td>266</td>
+<td>265</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>259</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>270</td>
+<td></td>
+</tr>
+<tr>
+<td>R4</td>
+<td>2.5</td>
+<td>395</td>
+<td>395</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>390</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td>R5</td>
+<td>2.5</td>
+<td>675</td>
+<td>675</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>675</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>675</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="2-%E9%9B%BB%E4%BD%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%AE%E5%AE%9F%E9%A8%93%E3%81%A7%E5%88%A9%E7%94%A8%E3%81%97%E3%81%9F%E5%90%84%E6%99%AF%E6%B0%97%E3%81%AE%E5%86%85%E9%83%A8%E6%8A%B5%E6%8A%97%E5%80%A4%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%81%9F%E8%A1%A8">2 電位降下法の実験で利用した各景気の内部抵抗値をまとめた表</h3>
+
+<div style="text-align:center;">表3.2   電位降下法の実験にて仕様した機材の各端子の内部抵抗をまとめた表</div>
+<table>
+<thead>
+<tr>
+<th>計器</th>
+<th>端子</th>
+<th>内部抵抗[Ω]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>電圧計の内部抵抗rv</td>
+<td>1V</td>
+<td>1005</td>
+</tr>
+<tr>
+<td></td>
+<td>3V</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>電流計の内部抵抗ra</td>
+<td>1mA</td>
+<td>360</td>
+</tr>
+<tr>
+<td></td>
+<td>3mA</td>
+<td>142.1</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="3-%E9%9B%BB%E4%BD%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E5%AE%9F%E9%A8%93%E7%B5%90%E6%9E%9C%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%81%9F%E8%A1%A8-%E8%A1%A81%E3%81%AB%E7%A4%BA%E3%81%99%E5%BD%A2%E5%BC%8F%E3%81%A7%E4%B8%A1%E6%96%B9%E3%81%AE%E5%9B%9E%E8%B7%AF%E3%81%A8%E6%B8%AC%E5%AE%9A%E3%81%97%E3%81%9F%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AE%E6%9C%AA%E7%9F%A5%E6%8A%B5%E6%8A%97%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E5%A0%B1%E5%91%8A%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8">3 電位降下法に関する実験結果をまとめた表。表1に示す形式で両方の回路と測定したすべての未知抵抗について報告すること。</h3>
+
+<h4 class="mume-header" id="%E5%9B%9E%E8%B7%AFa-%E6%B8%AC%E5%AE%9A%E7%AB%AF%E5%AD%90-1v-1ma">回路A 測定端子 1V-1mA</h4>
+
+<div style="text-align:center;">表3.3.1 回路Aの測定端子1V-1mAにおける測定結果と道抵抗に間関する表</div>
+<table>
+<thead>
+<tr>
+<th>未知抵抗</th>
+<th>I[mA]</th>
+<th>V[V]</th>
+<th>R[Ω]</th>
+<th>rv[Ω]</th>
+<th>ra[Ω]</th>
+<th>Rx[Ω]</th>
+<th>Rx'[Ω]</th>
+<th>R-Rx'[Ω]</th>
+<th>ε [%]</th>
+<th>ε' [%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>0.8</td>
+<td>0.08</td>
+<td>100</td>
+<td>1005</td>
+<td>360</td>
+<td>111</td>
+<td>111</td>
+<td>-11</td>
+<td>9.90990991</td>
+<td>9.90990991</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.05</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td>111</td>
+<td></td>
+<td>-11</td>
+<td>9.90990991</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.02</td>
+<td>100</td>
+<td></td>
+<td></td>
+<td>111</td>
+<td></td>
+<td>-11</td>
+<td>9.90990991</td>
+<td></td>
+</tr>
+<tr>
+<td>R3</td>
+<td>0.8</td>
+<td>0.165</td>
+<td>206.25</td>
+<td></td>
+<td></td>
+<td>260</td>
+<td>248</td>
+<td>-53.75</td>
+<td>20.67307692</td>
+<td>42.33012755</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.1</td>
+<td>200</td>
+<td></td>
+<td></td>
+<td>244</td>
+<td></td>
+<td>-44</td>
+<td>18.03278689</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.09</td>
+<td>450</td>
+<td></td>
+<td></td>
+<td>239</td>
+<td></td>
+<td>211</td>
+<td>88.28451883</td>
+<td></td>
+</tr>
+<tr>
+<td>R4</td>
+<td>0.8</td>
+<td>0.224</td>
+<td>280</td>
+<td></td>
+<td></td>
+<td>388</td>
+<td>367</td>
+<td>-108</td>
+<td>27.83505155</td>
+<td>26.70946584</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.138</td>
+<td>276</td>
+<td></td>
+<td></td>
+<td>380</td>
+<td></td>
+<td>-104</td>
+<td>27.36842105</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.05</td>
+<td>250</td>
+<td></td>
+<td></td>
+<td>333</td>
+<td></td>
+<td>-83</td>
+<td>24.92492492</td>
+<td></td>
+</tr>
+<tr>
+<td>R5</td>
+<td>0.8</td>
+<td>0.311</td>
+<td>388.75</td>
+<td></td>
+<td></td>
+<td>634</td>
+<td>641</td>
+<td>-245.25</td>
+<td>38.6829653</td>
+<td>44.95670803</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.155</td>
+<td>310</td>
+<td></td>
+<td></td>
+<td>639</td>
+<td></td>
+<td>-329</td>
+<td>51.48669797</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.072</td>
+<td>360</td>
+<td></td>
+<td></td>
+<td>651</td>
+<td></td>
+<td>-291</td>
+<td>44.70046083</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E5%9B%9E%E8%B7%AFa%E3%81%AE-%E6%B8%AC%E5%AE%9A%E7%AB%AF%E5%AD%90-1v-3ma">回路Aの 測定端子 1V-3mA</h4>
+
+<div style="text-align:center;">表3.3.2 回路Aの測定端子1V-3mAにおける測定結果と道抵抗に間関する表</div>
+<table>
+<thead>
+<tr>
+<th>未知抵抗</th>
+<th>I[mA]</th>
+<th>V[V]</th>
+<th>R[Ω]</th>
+<th>rv[Ω]</th>
+<th>ra[Ω]</th>
+<th>Rx[Ω]</th>
+<th>Rx'[Ω]</th>
+<th>R-Rx'[Ω]</th>
+<th>ε [%]</th>
+<th>ε' [%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>2.5</td>
+<td>0.261</td>
+<td>104.4</td>
+<td>1005</td>
+<td>142</td>
+<td>116.6</td>
+<td>113.4666667</td>
+<td>-12.2</td>
+<td>10.46312178</td>
+<td>9.519898768</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.152</td>
+<td>101.3333333</td>
+<td></td>
+<td></td>
+<td>112.7</td>
+<td></td>
+<td>-11.36666667</td>
+<td>10.08577344</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.06</td>
+<td>120</td>
+<td></td>
+<td></td>
+<td>111.1</td>
+<td></td>
+<td>8.9</td>
+<td>8.01080108</td>
+<td></td>
+</tr>
+<tr>
+<td>R3</td>
+<td>2.5</td>
+<td>0.52</td>
+<td>208</td>
+<td></td>
+<td></td>
+<td>267.3</td>
+<td>251</td>
+<td>-59.3</td>
+<td>22.18481107</td>
+<td>16.05805566</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.306</td>
+<td>204</td>
+<td></td>
+<td></td>
+<td>256</td>
+<td></td>
+<td>-52</td>
+<td>20.3125</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.121</td>
+<td>242</td>
+<td></td>
+<td></td>
+<td>229</td>
+<td></td>
+<td>13</td>
+<td>5.676855895</td>
+<td></td>
+</tr>
+<tr>
+<td>R4</td>
+<td>2.5</td>
+<td>0.692</td>
+<td>276.8</td>
+<td></td>
+<td></td>
+<td>382</td>
+<td>373</td>
+<td>-105.2</td>
+<td>27.53926702</td>
+<td>27.06214479</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.41</td>
+<td>273.3333333</td>
+<td></td>
+<td></td>
+<td>375.4</td>
+<td></td>
+<td>-102.0666667</td>
+<td>27.18877642</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.133</td>
+<td>266</td>
+<td></td>
+<td></td>
+<td>361.7</td>
+<td></td>
+<td>-95.7</td>
+<td>26.45839093</td>
+<td></td>
+</tr>
+<tr>
+<td>R5</td>
+<td>2.5</td>
+<td>0.99</td>
+<td>396</td>
+<td></td>
+<td></td>
+<td>653.5</td>
+<td>640</td>
+<td>-257.5</td>
+<td>39.40321347</td>
+<td>44.28023755</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.59</td>
+<td>393.3333333</td>
+<td></td>
+<td></td>
+<td>646.3</td>
+<td></td>
+<td>-252.9666667</td>
+<td>39.14074991</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.142</td>
+<td>284</td>
+<td></td>
+<td></td>
+<td>621.4</td>
+<td></td>
+<td>-337.4</td>
+<td>54.29674928</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E5%9B%9E%E8%B7%AFa-%E6%B8%AC%E5%AE%9A%E7%AB%AF%E5%AD%90-3v-3ma">回路A 測定端子 3V-3mA</h4>
+
+<div style="text-align:center;">表3.3.3 回路Aの測定端子3V-3mAにおける測定結果と道抵抗に間関する表</div>
+<table>
+<thead>
+<tr>
+<th>未知抵抗</th>
+<th>I[mA]</th>
+<th>V[V]</th>
+<th>R[Ω]</th>
+<th>rv[Ω]</th>
+<th>ra[Ω]</th>
+<th>Rx[Ω]</th>
+<th>Rx'[Ω]</th>
+<th>R-Rx'[Ω]</th>
+<th>ε [%]</th>
+<th>ε' [%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>2.5</td>
+<td>0.28</td>
+<td>112</td>
+<td>3000</td>
+<td>142</td>
+<td>116.3</td>
+<td>117.3</td>
+<td>-4.3</td>
+<td>3.69733448</td>
+<td>3.751231244</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.16</td>
+<td>106.6666667</td>
+<td></td>
+<td></td>
+<td>110.6</td>
+<td></td>
+<td>-3.933333333</td>
+<td>3.556359253</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.06</td>
+<td>120</td>
+<td></td>
+<td></td>
+<td>125</td>
+<td></td>
+<td>-5</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>R3</td>
+<td>2.5</td>
+<td>0.6</td>
+<td>240</td>
+<td></td>
+<td></td>
+<td>260.9</td>
+<td>261</td>
+<td>-20.9</td>
+<td>8.010732081</td>
+<td>8.010732081</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.36</td>
+<td>240</td>
+<td></td>
+<td></td>
+<td>260.9</td>
+<td></td>
+<td>-20.9</td>
+<td>8.010732081</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.12</td>
+<td>240</td>
+<td></td>
+<td></td>
+<td>260.9</td>
+<td></td>
+<td>-20.9</td>
+<td>8.010732081</td>
+<td></td>
+</tr>
+<tr>
+<td>R4</td>
+<td>2.5</td>
+<td>0.85</td>
+<td>340</td>
+<td></td>
+<td></td>
+<td>383.5</td>
+<td>372</td>
+<td>-43.5</td>
+<td>11.34289439</td>
+<td>22.20642543</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.5</td>
+<td>333.3333333</td>
+<td></td>
+<td></td>
+<td>375</td>
+<td></td>
+<td>-41.66666667</td>
+<td>11.11111111</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.1</td>
+<td>200</td>
+<td></td>
+<td></td>
+<td>358.2</td>
+<td></td>
+<td>-158.2</td>
+<td>44.1652708</td>
+<td></td>
+</tr>
+<tr>
+<td>R5</td>
+<td>2.5</td>
+<td>1.35</td>
+<td>540</td>
+<td></td>
+<td></td>
+<td>658.5</td>
+<td>649</td>
+<td>-118.5</td>
+<td>17.99544419</td>
+<td>17.81706861</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.81</td>
+<td>540</td>
+<td></td>
+<td></td>
+<td>658.5</td>
+<td></td>
+<td>-118.5</td>
+<td>17.99544419</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.26</td>
+<td>520</td>
+<td></td>
+<td></td>
+<td>630</td>
+<td></td>
+<td>-110</td>
+<td>17.46031746</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E5%9B%9E%E8%B7%AFb-%E6%B8%AC%E5%AE%9A%E7%AB%AF%E5%AD%90-1v-1ma">回路B 測定端子 1V-1mA</h4>
+
+<div style="text-align:center;">表3.3.4 回路Bの測定端子1V-1mAにおける測定結果と道抵抗に間関する表</div>
+<table>
+<thead>
+<tr>
+<th>未知抵抗</th>
+<th>I[mA]</th>
+<th>V[V]</th>
+<th>R[Ω]</th>
+<th>rv[Ω]</th>
+<th>ra[Ω]</th>
+<th>Rx[Ω]</th>
+<th>Rx'[Ω]</th>
+<th>R-Rx'[Ω]</th>
+<th>ε [%]</th>
+<th>ε' [%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>0.8</td>
+<td>0.37</td>
+<td>462.5</td>
+<td>1005</td>
+<td>360</td>
+<td>103</td>
+<td>97</td>
+<td>359.5</td>
+<td>349.0291262</td>
+<td>372.125355</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.229</td>
+<td>458</td>
+<td></td>
+<td></td>
+<td>98</td>
+<td></td>
+<td>360</td>
+<td>367.3469388</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.09</td>
+<td>450</td>
+<td></td>
+<td></td>
+<td>90</td>
+<td></td>
+<td>360</td>
+<td>400</td>
+<td></td>
+</tr>
+<tr>
+<td>R3</td>
+<td>0.8</td>
+<td>0.485</td>
+<td>606.25</td>
+<td></td>
+<td></td>
+<td>246</td>
+<td>242</td>
+<td>360.25</td>
+<td>146.4430894</td>
+<td>149.0921409</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.301</td>
+<td>602</td>
+<td></td>
+<td></td>
+<td>240</td>
+<td></td>
+<td>362</td>
+<td>150.8333333</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.12</td>
+<td>600</td>
+<td></td>
+<td></td>
+<td>240</td>
+<td></td>
+<td>360</td>
+<td>150</td>
+<td></td>
+</tr>
+<tr>
+<td>R4</td>
+<td>0.8</td>
+<td>0.589</td>
+<td>736.25</td>
+<td></td>
+<td></td>
+<td>376</td>
+<td>372</td>
+<td>360.25</td>
+<td>95.81117021</td>
+<td>98.23994499</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.362</td>
+<td>724</td>
+<td></td>
+<td></td>
+<td>369</td>
+<td></td>
+<td>355</td>
+<td>96.20596206</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.15</td>
+<td>750</td>
+<td></td>
+<td></td>
+<td>370</td>
+<td></td>
+<td>380</td>
+<td>102.7027027</td>
+<td></td>
+</tr>
+<tr>
+<td>R5</td>
+<td>0.8</td>
+<td>0.805</td>
+<td>1006.25</td>
+<td></td>
+<td></td>
+<td>641</td>
+<td>640</td>
+<td>365.25</td>
+<td>56.98127925</td>
+<td>56.23334308</td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.5</td>
+<td>1000</td>
+<td></td>
+<td></td>
+<td>640</td>
+<td></td>
+<td>360</td>
+<td>56.25</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.2</td>
+<td>0.199</td>
+<td>995</td>
+<td></td>
+<td></td>
+<td>640</td>
+<td></td>
+<td>355</td>
+<td>55.46875</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E5%9B%9E%E8%B7%AFb-%E6%B8%AC%E5%AE%9A%E7%AB%AF%E5%AD%90-1v-3ma">回路B 測定端子 1V-3mA</h4>
+
+<div style="text-align:center;">表3.3.5 回路Bの測定端子1V-3mAにおける測定結果と道抵抗に間関する表</div>
+<table>
+<thead>
+<tr>
+<th>未知抵抗</th>
+<th>I[mA]</th>
+<th>V[V]</th>
+<th>R[Ω]</th>
+<th>rv[Ω]</th>
+<th>ra[Ω]</th>
+<th>Rx[Ω]</th>
+<th>Rx'[Ω]</th>
+<th>R-Rx'[Ω]</th>
+<th>ε [%]</th>
+<th>ε' [%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>2.5</td>
+<td>0.635</td>
+<td>254</td>
+<td>1005</td>
+<td>142</td>
+<td>112</td>
+<td>109.1111111</td>
+<td>144.8888889</td>
+<td>129.3650794</td>
+<td>197.8161504</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.38</td>
+<td>253.3333333</td>
+<td></td>
+<td></td>
+<td>111.3333333</td>
+<td></td>
+<td>253.3333333</td>
+<td>227.5449102</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.123</td>
+<td>246</td>
+<td></td>
+<td></td>
+<td>104</td>
+<td></td>
+<td>246</td>
+<td>236.5384615</td>
+<td></td>
+</tr>
+<tr>
+<td>R3</td>
+<td>2</td>
+<td>0.791</td>
+<td>395.5</td>
+<td></td>
+<td></td>
+<td>253.5</td>
+<td>189</td>
+<td>206.5</td>
+<td>81.45956607</td>
+<td>194.0154382</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.595</td>
+<td>396.6666667</td>
+<td></td>
+<td></td>
+<td>254.6666667</td>
+<td></td>
+<td>396.6666667</td>
+<td>155.7591623</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>0.2</td>
+<td>200</td>
+<td></td>
+<td></td>
+<td>58</td>
+<td></td>
+<td>200</td>
+<td>344.8275862</td>
+<td></td>
+</tr>
+<tr>
+<td>R4</td>
+<td>1.5</td>
+<td>0.78</td>
+<td>520</td>
+<td></td>
+<td></td>
+<td>378</td>
+<td>372</td>
+<td>148</td>
+<td>39.15343915</td>
+<td>105.3880071</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>0.52</td>
+<td>520</td>
+<td></td>
+<td></td>
+<td>378</td>
+<td></td>
+<td>520</td>
+<td>137.5661376</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.251</td>
+<td>502</td>
+<td></td>
+<td></td>
+<td>360</td>
+<td></td>
+<td>502</td>
+<td>139.4444444</td>
+<td></td>
+</tr>
+<tr>
+<td>R5</td>
+<td>1</td>
+<td>0.793</td>
+<td>793</td>
+<td></td>
+<td></td>
+<td>651</td>
+<td>612</td>
+<td>181</td>
+<td>27.80337942</td>
+<td>92.0367682</td>
+</tr>
+<tr>
+<td></td>
+<td>0.7</td>
+<td>0.551</td>
+<td>787.1428571</td>
+<td></td>
+<td></td>
+<td>645.1428571</td>
+<td></td>
+<td>787.1428571</td>
+<td>122.0106289</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.341</td>
+<td>682</td>
+<td></td>
+<td></td>
+<td>540</td>
+<td></td>
+<td>682</td>
+<td>126.2962963</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="%E5%9B%9E%E8%B7%AFb-%E6%B8%AC%E5%AE%9A%E7%AB%AF%E5%AD%90-3v-3ma">回路B 測定端子 3V-3mA</h4>
+
+<div style="text-align:center;">表3.3.6 回路Bの測定端子3V-3mAにおける測定結果と道抵抗に間関する表</div>
+<table>
+<thead>
+<tr>
+<th>未知抵抗</th>
+<th>I[mA]</th>
+<th>V[V]</th>
+<th>R[Ω]</th>
+<th>rv[Ω]</th>
+<th>ra[Ω]</th>
+<th>Rx[Ω]</th>
+<th>Rx'[Ω]</th>
+<th>R-Rx'[Ω]</th>
+<th>ε [%]</th>
+<th>ε' [%]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>2.5</td>
+<td>0.615</td>
+<td>246</td>
+<td>3000</td>
+<td>142</td>
+<td>104</td>
+<td>104.4444444</td>
+<td>141.5555556</td>
+<td>136.1111111</td>
+<td>202.8513268</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.38</td>
+<td>253.3333333</td>
+<td></td>
+<td></td>
+<td>111.3333333</td>
+<td></td>
+<td>253.3333333</td>
+<td>227.5449102</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.12</td>
+<td>240</td>
+<td></td>
+<td></td>
+<td>98</td>
+<td></td>
+<td>240</td>
+<td>244.8979592</td>
+<td></td>
+</tr>
+<tr>
+<td>R3</td>
+<td>2.5</td>
+<td>1</td>
+<td>400</td>
+<td></td>
+<td></td>
+<td>258</td>
+<td>255</td>
+<td>145</td>
+<td>56.20155039</td>
+<td>122.8327915</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.6</td>
+<td>400</td>
+<td></td>
+<td></td>
+<td>258</td>
+<td></td>
+<td>400</td>
+<td>155.0387597</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.195</td>
+<td>390</td>
+<td></td>
+<td></td>
+<td>248</td>
+<td></td>
+<td>390</td>
+<td>157.2580645</td>
+<td></td>
+</tr>
+<tr>
+<td>R4</td>
+<td>2.5</td>
+<td>1.3</td>
+<td>520</td>
+<td></td>
+<td></td>
+<td>378</td>
+<td>371</td>
+<td>149</td>
+<td>39.41798942</td>
+<td>105.5496438</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>0.78</td>
+<td>520</td>
+<td></td>
+<td></td>
+<td>378</td>
+<td></td>
+<td>520</td>
+<td>137.5661376</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.25</td>
+<td>500</td>
+<td></td>
+<td></td>
+<td>358</td>
+<td></td>
+<td>500</td>
+<td>139.6648045</td>
+<td></td>
+</tr>
+<tr>
+<td>R5</td>
+<td>2.5</td>
+<td>2</td>
+<td>800</td>
+<td></td>
+<td></td>
+<td>658</td>
+<td>653</td>
+<td>147</td>
+<td>22.34042553</td>
+<td>88.67121809</td>
+</tr>
+<tr>
+<td></td>
+<td>1.5</td>
+<td>1.18</td>
+<td>786.6666667</td>
+<td></td>
+<td></td>
+<td>644.6666667</td>
+<td></td>
+<td>786.6666667</td>
+<td>122.0268873</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>0.5</td>
+<td>0.399</td>
+<td>798</td>
+<td></td>
+<td></td>
+<td>656</td>
+<td></td>
+<td>798</td>
+<td>121.6463415</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="4-%E9%9B%BB%E4%BD%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%AE%E5%AE%9F%E9%A8%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E9%81%93%E6%8A%B5%E6%8A%97%E3%81%A8%E8%AA%A4%E5%B7%AE%E7%8E%87%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%A1%A8%E3%81%99%E3%82%B0%E3%83%A9%E3%83%95">4 電位降下法の実験における道抵抗と誤差率の関係を表すグラフ</h3>
+
+<p>グラフの横軸はRx'縦軸はε'(|ε|の平均値)とする。</p>
+<h4 class="mume-header" id="1v-1ma">1V-1mA</h4>
+
+<div style="text-align:center;">表3.4.1 1V-1mAにおける回路Aと回路BのRx'とε'の表</div>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th></th>
+<th>B</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rx'</td>
+<td>ε'</td>
+<td>Rx'</td>
+<td>ε'</td>
+</tr>
+<tr>
+<td>111</td>
+<td>9.90990991</td>
+<td>97</td>
+<td>372.125355</td>
+</tr>
+<tr>
+<td>248</td>
+<td>42.33012755</td>
+<td>242</td>
+<td>149.0921409</td>
+</tr>
+<tr>
+<td>367</td>
+<td>26.70946584</td>
+<td>372</td>
+<td>98.23994499</td>
+</tr>
+<tr>
+<td>641</td>
+<td>44.95670803</td>
+<td>640</td>
+<td>56.23334308</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">グラフ3.4.2 また，1V-1mAにおけるグラフ</div>
+<p><img src="1V-1mA.png" alt="1V-1mA"></p>
+<h4 class="mume-header" id="1v-3ma">1V-3mA</h4>
+
+<div style="text-align:center;">表3.4.3 1V-3mAにおける回路Aと回路BのRx'とε'の表</div>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th></th>
+<th>B</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rx'</td>
+<td>ε'</td>
+<td>Rx'</td>
+<td>ε'</td>
+</tr>
+<tr>
+<td>113.4666667</td>
+<td>9.519898768</td>
+<td>109.1111111</td>
+<td>197.8161504</td>
+</tr>
+<tr>
+<td>251</td>
+<td>16.05805566</td>
+<td>189</td>
+<td>194.0154382</td>
+</tr>
+<tr>
+<td>373</td>
+<td>27.06214479</td>
+<td>372</td>
+<td>105.3880071</td>
+</tr>
+<tr>
+<td>640</td>
+<td>44.28023755</td>
+<td>612</td>
+<td>92.0367682</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">グラフ3.4.4 3V-3mAにおけるグラフ</div>
+<p><img src="1V-3mA.png" alt="1V-3mA"></p>
+<h4 class="mume-header" id="3v-3ma">3V-3mA</h4>
+
+<div style="text-align:center;">表3.4.5 3V-3mAにおける回路Aと回路BのRx'とε'の表</div>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th></th>
+<th>B</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rx'</td>
+<td>ε'</td>
+<td>Rx'</td>
+<td>ε'</td>
+</tr>
+<tr>
+<td>117.3</td>
+<td>3.751231244</td>
+<td>104.4444444</td>
+<td>202.8513268</td>
+</tr>
+<tr>
+<td>261</td>
+<td>8.010732081</td>
+<td>255</td>
+<td>122.8327915</td>
+</tr>
+<tr>
+<td>372</td>
+<td>22.20642543</td>
+<td>371</td>
+<td>105.5496438</td>
+</tr>
+<tr>
+<td>649</td>
+<td>17.81706861</td>
+<td>653</td>
+<td>88.67121809</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">グラフ3.4.6 3V-3mAにおけるグラフ</div>
+<p><img src="3V-3mA.png" alt="3V-3mA"></p>
+<h2 class="mume-header" id="%E7%A0%94%E7%A9%B6%E8%AA%B2%E9%A1%8C">研究課題</h2>
+
+<ol>
+<li>置換法の測定において，既知抵抗の電流値が未知抵抗の電流値と完全に一致しない場合は，未知抵抗の電流値の前後の値となる既知抵抗の電流値を使って補間計算を行う。どのように保管すればよいか調べ，その方法を報告せよ。</li>
+<li>電位降下法と比較して，置換法の有利な点と不利な点を調べ報告せよ。</li>
+<li>端子の組み合わせごとに，回路の違いによる誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較し，どのようなことがわかるか報告せよ。</li>
+<li>電位降下法により中位抵抗を測定する場合，実験した範囲内では計器の端子のどの組み合わせが良いか，その理由と共に報告せよ</li>
+</ol>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C1">課題1</h3>
+
+<blockquote>
+<blockquote>
+<p>置換法の測定において，既知抵抗の電流値が未知抵抗の電流値と完全に一致しない場合は，未知抵抗の電流値の前後の値となる既知抵抗の電流値を使って補間計算を行う。どのように保管すればよいか調べ，その方法を報告せよ。</p>
+</blockquote>
+</blockquote>
+<p>参考文献番号：1</p>
+<p>既知抵抗Rの電流値Iが未知抵抗Rxの電流値Ixと完全に一致しない<br>
+オームの法則V=RIと電圧が一定なことから</p>
+<blockquote>
+<p>R<em>I=Rx</em>Ix=Const.</p>
+</blockquote>
+<p>と考えられる。<br>
+このことからRxについて解くことで，</p>
+<blockquote>
+<p>Rx=R*I/Ix</p>
+</blockquote>
+<p>が得られる。</p>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C2">課題2</h3>
+
+<blockquote>
+<blockquote>
+<p>電位降下法と比較して，置換法の有利な点と不利な点を調べ報告せよ。</p>
+</blockquote>
+</blockquote>
+<h4 class="mume-header" id="%E5%BC%B1%E7%82%B9">弱点</h4>
+
+<p>既知抵抗の持つ誤差を超える精度は得られない（基準となる既知抵抗が狂っていたらそれと同じだけ狂った測定値しか得られない）<br>
+さらに電流計の誤差が上積みされる（既知抵抗と同じ電流値となったとしても、その値は電流計の固有の誤差を必ず含む）</p>
+<h4 class="mume-header" id="%E5%88%A9%E7%82%B9">利点</h4>
+
+<p>相対抵抗を揃えることに強い（既知抵抗と相対的に抵抗値の揃った＝計器の誤差範囲内で＝ものを得やすい）</p>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C3">課題3</h3>
+
+<blockquote>
+<blockquote>
+<p>端子の組み合わせごとに，回路の違よるいに誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較し，どのようなことがわかるか報告せよ。</p>
+</blockquote>
+</blockquote>
+<div style="text-align:center;">表3.2 電位降下法の実験にて仕様した機材の各端子の内部抵抗をまとめた表</div>
+<table>
+<thead>
+<tr>
+<th>計器</th>
+<th>端子</th>
+<th>内部抵抗[Ω]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>電圧計の内部抵抗rv</td>
+<td>1V</td>
+<td>1005</td>
+</tr>
+<tr>
+<td></td>
+<td>3V</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>電流計の内部抵抗ra</td>
+<td>1mA</td>
+<td>360</td>
+</tr>
+<tr>
+<td></td>
+<td>3mA</td>
+<td>142.1</td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="1v-1ma-1">1V-1mA</h4>
+
+<div style="text-align:center;">表4.3.1.1 誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較するための表</div>
+<table>
+<thead>
+<tr>
+<th>Rx'</th>
+<th>ε'</th>
+<th>Rx'</th>
+<th>ε'</th>
+<th>ra</th>
+<th>rv</th>
+<th>y</th>
+<th>√rv*ra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>111</td>
+<td>9.90990991</td>
+<td>97</td>
+<td>372.125355</td>
+<td>360</td>
+<td>1005</td>
+<td>0</td>
+<td>601.4981297</td>
+</tr>
+<tr>
+<td>248</td>
+<td>42.33012755</td>
+<td>242</td>
+<td>149.0921409</td>
+<td>360</td>
+<td>1005</td>
+<td>400</td>
+<td>601.4981297</td>
+</tr>
+<tr>
+<td>367</td>
+<td>26.70946584</td>
+<td>372</td>
+<td>98.23994499</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>641</td>
+<td>44.95670803</td>
+<td>640</td>
+<td>56.23334308</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">グラフ4.3.1.2 誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較するための表のグラフ</div>
+<p><img src="1V-1mA_g.png" alt="1V-1mA_g"></p>
+<h4 class="mume-header" id="1v-3ma-1">1V-3mA</h4>
+
+<div style="text-align:center;">表4.3.2.1 誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較するための表</div>
+<table>
+<thead>
+<tr>
+<th>Rx'</th>
+<th>ε'</th>
+<th>Rx'</th>
+<th>ε'</th>
+<th>ra</th>
+<th>rv</th>
+<th>y</th>
+<th>√rv*ra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>113.4666667</td>
+<td>9.519898768</td>
+<td>109.1111111</td>
+<td>197.8161504</td>
+<td>142.1</td>
+<td>1005</td>
+<td>0</td>
+<td>377.9027653</td>
+</tr>
+<tr>
+<td>251</td>
+<td>16.05805566</td>
+<td>189</td>
+<td>194.0154382</td>
+<td>142.1</td>
+<td>1005</td>
+<td>400</td>
+<td>377.9027653</td>
+</tr>
+<tr>
+<td>373</td>
+<td>27.06214479</td>
+<td>372</td>
+<td>105.3880071</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>640</td>
+<td>44.28023755</td>
+<td>612</td>
+<td>92.0367682</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">グラフ4.3.2.2 誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較するための表のグラフ</div>
+<p><img src="1V-3mA_g.png" alt="1V-3mA_g"></p>
+<h4 class="mume-header" id="3v-3ma-1">3V-3mA</h4>
+
+<div style="text-align:center;">表4.3.3.1 誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較するための表</div>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th></th>
+<th>B</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rx'</td>
+<td>ε'</td>
+<td>Rx'</td>
+<td>ε'</td>
+<td>ra</td>
+<td>rv</td>
+<td>y</td>
+<td>√rv*ra</td>
+</tr>
+<tr>
+<td>117.3</td>
+<td>3.751231244</td>
+<td>104.4444444</td>
+<td>202.8513268</td>
+<td>142.1</td>
+<td>3000</td>
+<td>0</td>
+<td>652.9165337</td>
+</tr>
+<tr>
+<td>261</td>
+<td>8.010732081</td>
+<td>255</td>
+<td>122.8327915</td>
+<td>142.1</td>
+<td>3000</td>
+<td>400</td>
+<td>652.9165337</td>
+</tr>
+<tr>
+<td>372</td>
+<td>22.20642543</td>
+<td>371</td>
+<td>105.5496438</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>649</td>
+<td>17.81706861</td>
+<td>653</td>
+<td>88.67121809</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align:center;">グラフ4.3.3.2 誤差率の違いを比較するグラフ3枚に√(rv*ra)の縦線引いて，縦線の前後で2つの測定回路の誤差率を比較するための表のグラフ</div>
+<p><img src="3V-3mA_g.png" alt="3V-3mA_g"></p>
+<h4 class="mume-header" id="%E8%AA%B2%E9%A1%8C3%E3%81%BE%E3%81%A8%E3%82%81">課題3まとめ</h4>
+
+<p>緑の先の前は誤差がAとBで離れているが，緑の後ではAとBの誤差が近くなっている。</p>
+<h3 class="mume-header" id="%E8%AA%B2%E9%A1%8C4">課題4</h3>
+
+<blockquote>
+<blockquote>
+<p>電位降下法により中位抵抗を測定する場合，実験した範囲内では計器の端子のどの組み合わせが良いか，その理由と共に報告せよ</p>
+</blockquote>
+</blockquote>
+<p>参考文献番号：3</p>
+<h4 class="mume-header" id="a%E3%81%AE%E5%9B%9E%E8%B7%AF">Aの回路</h4>
+
+<p>3V-3mAのときが最も誤差が小さいためAの回路で計測する場合は3V-3mAが最も適していると考えられる。</p>
+<h4 class="mume-header" id="b%E3%81%AE%E5%9B%9E%E8%B7%AF">Bの回路</h4>
+
+<p>3V-3mAのときが最も誤差が小さいためBの回路で計測する場合は3V-3mAが最も適していると考えられる。</p>
+<h4 class="mume-header" id="%E8%AA%B2%E9%A1%8C4%E3%81%BE%E3%81%A8%E3%82%81">課題4まとめ</h4>
+
+<p>どちらの回路でも3V-3mAのときが最も適していた。</p>
+<h2 class="mume-header" id="%E5%8F%82%E8%80%83">参考</h2>
+
+<table>
+<thead>
+<tr>
+<th>参考文献番号</th>
+<th>タイトル</th>
+<th>URL</th>
+<th>閲覧日時(年月日)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ー</td>
+<td>実験書</td>
+<td>ー</td>
+<td>ー</td>
+</tr>
+<tr>
+<td>1</td>
+<td>電気計測の置換法の補間計算について</td>
+<td><a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11129240791">https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11129240791</a></td>
+<td>2018/07/16</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Tables Generator</td>
+<td><a href="http://www.tablesgenerator.com/markdown_tables">http://www.tablesgenerator.com/markdown_tables</a></td>
+<td>2018/07/16</td>
+</tr>
+<tr>
+<td>3</td>
+<td>電気回路での抵抗の測定方法について</td>
+<td><a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12129209112">https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12129209112</a></td>
+<td>2018/07/16</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Excel 2016 for Macで複合グラフを作成する方法</td>
+<td><a href="https://hashimototsutomu.com/archives/10772444.html">https://hashimototsutomu.com/archives/10772444.html</a></td>
+<td>2018/07/16</td>
+</tr>
+<tr>
+<td>5</td>
+<td>グラフ散布図で複数の資料を重ねる。</td>
+<td><a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1317072898">https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1317072898</a></td>
+<td>2018/07/16</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%95%AA%E5%8F%B72-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%95%AA%E5%8F%B74-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%95%AA%E5%8F%B75">参考文献番号：2 / 参考文献番号：4 / 参考文献番号：5</h3>
+
+<p>各種表の生成に使用しました。</p>
+
+      </div>
+      
+      
+    </body>
+    
+    
+    
+    
+    
+    
+    
+  </html>

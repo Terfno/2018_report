@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>report</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/terfno/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.5/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="20180625-%E5%AE%9F%E9%A8%93%E6%9B%B8%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9%E3%83%87%E3%83%BC%E3%82%BF%E5%87%A6%E7%90%86-%E8%AA%B2%E9%A1%8C">2018/06/25 実験書の書き方/データ処理 課題</h1>
+
+<p>これまでに説明したレポートの書き方に基づいて，下記に示す実験書内容とか測定データを使ってレポートを作れ。</p>
+<h2 class="mume-header" id="issue">issue</h2>
+
+<ul>
+<li>全体・掲載した図表全てに説明文を図表番号を使って書く←解決 2018/07/16</li>
+<li>参考文献にwebページを使うときは，Webページのタイトル，URL，閲覧日時(年月日)を開く←解決 2018/07/16</li>
+<li>図中の各軸の単位(軸タイトル ラベル)が書かれていない←解決 2018/07/16</li>
+<li>実験結果&gt;3.温度変化，縦軸…&gt;金属A，金属Bの表のラベルaaの説明が無い←解決 2018/07/16</li>
+<li>なんか表の空欄ある…←解決 2018/07/16</li>
+<li>謎の[1],[2]とか←解決 2018/07/16</li>
+<li>変数と変数の積に下付き文字を使っていない←解決 2018/07/16
+<ul>
+<li>使わないのであれば”＊”を間に挟むべき</li>
+</ul>
+</li>
+<li>表タイトルは表のすぐ上に書くべき←解決 2018/07/16</li>
+</ul>
+<hr>
+<ul>
+<li>表タイトルの修正←解決 2018/07/24</li>
+<li>抵抗温度係数のグラフ修正←解決 2018/07/24
+<ul>
+<li>式が違う</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>図とグラフの単位が無いお←解決 2018/07/28</li>
+<li>図とグラフを文章から示す←解決 2018/07/28</li>
+</ul>
+<h2 class="mume-header" id="%E7%9B%AE%E7%9A%84">目的</h2>
+
+<p>実験を行いデータ収集し，整理する場合，守るべき原則や注意事項がある。</p>
+<p>この実験では，温度変化に伴う金属の抵抗値の測定を通して，次のことを確認する。</p>
+<ul>
+<li>アナログ計器の読み方</li>
+<li>表とグラフの書き方</li>
+</ul>
+<h2 class="mume-header" id="%E5%8E%9F%E7%90%86%E8%A7%A3%E8%AA%AC%E5%AE%9F%E9%A8%93%E6%96%B9%E6%B3%95">原理・解説・実験方法</h2>
+
+<h3 class="mume-header" id="%E6%B8%A9%E5%BA%A6%E5%A4%89%E5%8C%96%E3%81%AB%E4%BC%B4%E3%81%86%E9%87%91%E5%B1%9E%E3%81%AE%E6%8A%B5%E6%8A%97%E5%80%A4%E3%81%AE%E5%A4%89%E5%8C%96">温度変化に伴う金属の抵抗値の変化</h3>
+
+<p>電気抵抗を示す場合には，温度何℃のときの抵抗であるかを明確にしなければならない。</p>
+<p>これは電気抵抗が温度によって変化するためである。</p>
+<p>金属は一般に温度が上昇すれば抵抗が増加する。</p>
+<p>対して，電気溶解や半導体などは温度上昇とともに抵抗が減少する。</p>
+<p>いま温度0℃の抵抗をR0，上昇後の温度t1℃のときの抵抗をR1とする。</p>
+<p>温度が1℃上昇するごとにR0に対して抵抗の変わる割合をa0とおけば，t1℃の上昇によるR0に対する抵抗の変化はR0 a0 t1で表せるから，</p>
+<blockquote>
+<p>R1 = R0 + R0 a0 * t1 = R0(1+a0 * t1)<br>
+(3.1)</p>
+</blockquote>
+<p>となる。</p>
+<p>上式のa0は0℃における抵抗温度係数と呼ぶ。</p>
+<p>次に温度がt2℃上昇したときの抵抗をR2とすれば(3.1)式と同様にして，</p>
+<blockquote>
+<p>R2 = R0(1+a0*t2)<br>
+(3.2)</p>
+</blockquote>
+<p>が得られる。</p>
+<p>(3.1)式と(3.2)式よりR0を消去して整理すると</p>
+<blockquote>
+<p>R2 ＝ R1 * (1 + a0 * t2) / (1 + a0 * t1)</p>
+<p>= R1 * (1 + (a0 / (1 + a0 * t1)) * (t2 - t1))</p>
+<p>= R1 * (1 + a1 * (t2 - t1))</p>
+</blockquote>
+<p>となる。</p>
+<p>ここで，</p>
+<blockquote>
+<p>a1 = a0 / (1 + a0 * t1)</p>
+</blockquote>
+<p>である。</p>
+<h3 class="mume-header" id="%E5%AE%9F%E9%A8%93%E6%96%B9%E6%B3%95">実験方法</h3>
+
+<p>実験の手順は次の通りである。</p>
+<ol>
+<li>鉱物油を注いだオイルパンを用意する。</li>
+<li>オーム計とリード線で接続した金属をオイルパンに沈める。</li>
+<li>サーモスタットをオイルパンに入れる。</li>
+<li>温度計を水平に沈め，温度変化が止まるまで2分ほど待つ。</li>
+<li>サーモスタットのスイッチをオンにして，温度計とオーム計を使い，それぞれを記録する。</li>
+<li>測定終了後，金属を取り出し，キッチンペーパーでよく拭いてから，別の金属に対して(1)~(6)を行う。</li>
+</ol>
+<p>なお，測定にあたって以下の条件で測定を行う。</p>
+<ul>
+<li>3種類の金属を使う。各金属の抵抗値はすべて100Ω (20℃) である。</li>
+<li>20℃から5℃刻みで100℃までの各温度で抵抗を計測する。</li>
+</ul>
+<h2 class="mume-header" id="%E5%AE%9F%E9%A8%93%E7%B5%90%E6%9E%9C">実験結果</h2>
+
+<p>実験結果として次の内容を報告する。</p>
+<ol>
+<li>金属抵抗の測定結果と各金属の抵抗温度係数(0℃)をまとめた表3.1。</li>
+<li>表3.1をもとにした，横軸を温度，縦軸を抵抗値として2種類の金属の温度変化をそれぞれプロットしたグラフ
+<ul>
+<li>グラフの直線は最小二乗法をつかって描画する。</li>
+</ul>
+</li>
+<li>表3.1をもとにした，横軸を温度，縦軸を抵抗温度係数としてまとめたグラフ</li>
+<li>求めたを抵抗温度係数から3種類の金属がそれぞれ何に分類されるか表3.2から選び説明せよ。</li>
+</ol>
+<h3 class="mume-header" id="1-%E9%87%91%E5%B1%9E%E6%8A%B5%E6%8A%97%E3%81%AE%E6%B8%AC%E5%AE%9A%E7%B5%90%E6%9E%9C%E3%81%A8%E5%90%84%E9%87%91%E5%B1%9E%E3%81%AE%E6%8A%B5%E6%8A%97%E6%B8%A9%E5%BA%A6%E4%BF%82%E6%95%B00c%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%81%9F%E8%A1%A831">1. 金属抵抗の測定結果と各金属の抵抗温度係数(0℃)をまとめた表3.1</h3>
+
+<p>私の担当は金属1,2だった。<br>
+各金属の温度に対する抵抗値をまとめた実験結果を表3.1に示す</p>
+<div style="text-align:center;">表3.1   各金属の温度に対する抵抗値をまとめた実験結果</div>
+<table>
+<thead>
+<tr>
+<th>温度[℃]</th>
+<th>金属A 測定抵抗[Ω]</th>
+<th>金属B 測定抵抗[Ω]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20℃</td>
+<td>97.01</td>
+<td>104.29</td>
+</tr>
+<tr>
+<td>25℃</td>
+<td>103.58</td>
+<td>103.85</td>
+</tr>
+<tr>
+<td>30℃</td>
+<td>106.39</td>
+<td>104.20</td>
+</tr>
+<tr>
+<td>35℃</td>
+<td>103.92</td>
+<td>106.06</td>
+</tr>
+<tr>
+<td>40℃</td>
+<td>107.11</td>
+<td>110.21</td>
+</tr>
+<tr>
+<td>45℃</td>
+<td>107.93</td>
+<td>113.26</td>
+</tr>
+<tr>
+<td>50℃</td>
+<td>112.63</td>
+<td>109.04</td>
+</tr>
+<tr>
+<td>55℃</td>
+<td>115.84</td>
+<td>113.31</td>
+</tr>
+<tr>
+<td>60℃</td>
+<td>113.55</td>
+<td>119.53</td>
+</tr>
+<tr>
+<td>65℃</td>
+<td>116.03</td>
+<td>120.79</td>
+</tr>
+<tr>
+<td>70℃</td>
+<td>116.21</td>
+<td>120.19</td>
+</tr>
+<tr>
+<td>75℃</td>
+<td>121.22</td>
+<td>123.52</td>
+</tr>
+<tr>
+<td>80℃</td>
+<td>123.64</td>
+<td>127.51</td>
+</tr>
+<tr>
+<td>85℃</td>
+<td>121.00</td>
+<td>130.94</td>
+</tr>
+<tr>
+<td>90℃</td>
+<td>126.17</td>
+<td>135.11</td>
+</tr>
+<tr>
+<td>95℃</td>
+<td>127.98</td>
+<td>134.58</td>
+</tr>
+<tr>
+<td>100℃</td>
+<td>123.42</td>
+<td>137.87</td>
+</tr>
+<tr>
+<td>抵抗温度係数(0℃)</td>
+<td>0.0042655</td>
+<td>0.0050256</td>
+</tr>
+</tbody>
+</table>
+<p>0℃における抵抗温度係数a0は</p>
+<blockquote>
+<p>a0=R1/R0t1 + 1/t1</p>
+</blockquote>
+<h3 class="mume-header" id="2-%E8%A1%A831%E3%82%92%E3%82%82%E3%81%A8%E3%81%AB%E3%81%97%E3%81%9F%E6%A8%AA%E8%BB%B8%E3%82%92%E6%B8%A9%E5%BA%A6%E7%B8%A6%E8%BB%B8%E3%82%92%E6%8A%B5%E6%8A%97%E5%80%A4%E3%81%A8%E3%81%97%E3%81%A62%E7%A8%AE%E9%A1%9E%E3%81%AE%E9%87%91%E5%B1%9E%E3%81%AE%E6%B8%A9%E5%BA%A6%E5%A4%89%E5%8C%96%E3%82%92%E3%81%9D%E3%82%8C%E3%81%9E%E3%82%8C%E3%83%97%E3%83%AD%E3%83%83%E3%83%88%E3%81%97%E3%81%9F%E3%82%B0%E3%83%A9%E3%83%95">2. 表3.1をもとにした，横軸を温度，縦軸を抵抗値として2種類の金属の温度変化をそれぞれプロットしたグラフ</h3>
+
+<h4 class="mume-header" id="%E9%87%91%E5%B1%9Ea%E3%81%AE%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%97%E6%B3%95%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%A1%A8">金属Aの最小二乗法のための表</h4>
+
+<p>x軸の温度[℃]とy軸の測定抵抗[Ω]を表3.2.1に示す</p>
+<div style="text-align:center;">表3.2.1 x軸の温度[℃]とy軸の測定抵抗[Ω]</div>
+<table>
+<thead>
+<tr>
+<th>x軸 温度 [℃]</th>
+<th>y軸 測定抵抗 [Ω]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>97.01</td>
+</tr>
+<tr>
+<td>25</td>
+<td>103.58</td>
+</tr>
+<tr>
+<td>30</td>
+<td>106.39</td>
+</tr>
+<tr>
+<td>35</td>
+<td>103.92</td>
+</tr>
+<tr>
+<td>40</td>
+<td>107.11</td>
+</tr>
+<tr>
+<td>45</td>
+<td>107.93</td>
+</tr>
+<tr>
+<td>50</td>
+<td>112.63</td>
+</tr>
+<tr>
+<td>55</td>
+<td>115.84</td>
+</tr>
+<tr>
+<td>60</td>
+<td>113.55</td>
+</tr>
+<tr>
+<td>65</td>
+<td>116.03</td>
+</tr>
+<tr>
+<td>70</td>
+<td>116.21</td>
+</tr>
+<tr>
+<td>75</td>
+<td>121.22</td>
+</tr>
+<tr>
+<td>80</td>
+<td>123.64</td>
+</tr>
+<tr>
+<td>85</td>
+<td>121</td>
+</tr>
+<tr>
+<td>90</td>
+<td>126.17</td>
+</tr>
+<tr>
+<td>95</td>
+<td>127.98</td>
+</tr>
+<tr>
+<td>100</td>
+<td>123.42</td>
+</tr>
+</tbody>
+</table>
+<p>それぞれの軸の平均と分散を表3.2.2に示す</p>
+<div style="text-align:center;">表3.2.2 それぞれの軸の平均と分散</div>
+<table>
+<thead>
+<tr>
+<th>x軸平均</th>
+<th>y軸平均</th>
+<th>xの分散</th>
+<th>xとyの共分散</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60</td>
+<td>114.3311765</td>
+<td>1075.616866</td>
+<td>205.7352941</td>
+</tr>
+</tbody>
+</table>
+<p>表3.2.1と表3.2.2から最小二乗法によって求められたグラフをグラフ3.2.3に示す</p>
+<div style="text-align:center;">グラフ3.2.3 表3.2.1と表3.2.2から最小二乗法によって求められたグラフ</div>
+<p><img src="A.PNG" alt="A.xlsx"></p>
+<p>グラフの直線の式</p>
+<blockquote>
+<p>y=0.3429x+93.758</p>
+</blockquote>
+<h4 class="mume-header" id="%E9%87%91%E5%B1%9Eb%E3%81%AE%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%97%E6%B3%95%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%A1%A8">金属Bの最小二乗法のための表</h4>
+
+<p>x軸の温度[℃]とy軸の測定抵抗[Ω]を表3.2.4に示す</p>
+<div style="text-align:center;">表3.2.4 x軸の温度[℃]とy軸の測定抵抗[Ω]</div>
+<table>
+<thead>
+<tr>
+<th>x軸 温度 [℃]</th>
+<th>y軸 測定抵抗 [Ω]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>104.29</td>
+</tr>
+<tr>
+<td>25</td>
+<td>103.85</td>
+</tr>
+<tr>
+<td>30</td>
+<td>104.2</td>
+</tr>
+<tr>
+<td>35</td>
+<td>106.06</td>
+</tr>
+<tr>
+<td>40</td>
+<td>110.21</td>
+</tr>
+<tr>
+<td>45</td>
+<td>113.26</td>
+</tr>
+<tr>
+<td>50</td>
+<td>109.04</td>
+</tr>
+<tr>
+<td>55</td>
+<td>113.31</td>
+</tr>
+<tr>
+<td>60</td>
+<td>119.53</td>
+</tr>
+<tr>
+<td>65</td>
+<td>120.79</td>
+</tr>
+<tr>
+<td>70</td>
+<td>120.19</td>
+</tr>
+<tr>
+<td>75</td>
+<td>123.52</td>
+</tr>
+<tr>
+<td>80</td>
+<td>127.51</td>
+</tr>
+<tr>
+<td>85</td>
+<td>130.94</td>
+</tr>
+<tr>
+<td>90</td>
+<td>135.11</td>
+</tr>
+<tr>
+<td>95</td>
+<td>134.58</td>
+</tr>
+<tr>
+<td>100</td>
+<td>137.87</td>
+</tr>
+</tbody>
+</table>
+<p>それぞれの軸の平均と分散を表3.2.5に示す</p>
+<div style="text-align:center;">表3.2.5 それぞれの軸の平均と分散</div>
+<table>
+<thead>
+<tr>
+<th>x軸平均</th>
+<th>y軸平均</th>
+<th>xの分散</th>
+<th>xとyの共分散</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60</td>
+<td>118.4858824</td>
+<td>600</td>
+<td>271.5794118</td>
+</tr>
+</tbody>
+</table>
+<p>表3.2.3と表3.2.4から最小二乗法によって求められたグラフをグラフ3.3.6に示す</p>
+<div style="text-align:center;">グラフ3.3.6 表3.2.3と表3.2.4から最小二乗法によって求められたグラフ</div>
+<p><img src="B.PNG" alt="B.xlsx"></p>
+<p>グラフの直線の式</p>
+<blockquote>
+<p>y=0.4526x+91.328</p>
+</blockquote>
+<h3 class="mume-header" id="3-%E6%A8%AA%E8%BB%B8%E6%B8%A9%E5%BA%A6%E7%B8%A6%E8%BB%B8%E6%8A%B5%E6%8A%97%E6%B8%A9%E5%BA%A6%E4%BF%82%E6%95%B0%E3%81%AE%E3%82%B0%E3%83%A9%E3%83%95">3. 横軸温度，縦軸抵抗温度係数のグラフ</h3>
+
+<h4 class="mume-header" id="%E9%87%91%E5%B1%9Ea">金属A</h4>
+
+<p>金属Aに関する温度，抵抗，抵抗温度係数をまとめた表を表3.3.1に示す</p>
+<div style="text-align:center;">表3.3.1 金属Aに関する温度，抵抗，抵抗温度係数をまとめた表</div>
+<table>
+<thead>
+<tr>
+<th>t1 [℃]</th>
+<th>r1 [Ω]</th>
+<th>ai</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>97.01</td>
+<td>0.003110766</td>
+</tr>
+<tr>
+<td>25</td>
+<td>103.58</td>
+<td>0.005366153</td>
+</tr>
+<tr>
+<td>30</td>
+<td>106.39</td>
+<td>0.005497401</td>
+</tr>
+<tr>
+<td>35</td>
+<td>103.92</td>
+<td>0.003939333</td>
+</tr>
+<tr>
+<td>40</td>
+<td>107.11</td>
+<td>0.004320143</td>
+</tr>
+<tr>
+<td>45</td>
+<td>107.93</td>
+<td>0.004039652</td>
+</tr>
+<tr>
+<td>50</td>
+<td>112.63</td>
+<td>0.004664944</td>
+</tr>
+<tr>
+<td>55</td>
+<td>115.84</td>
+<td>0.004879913</td>
+</tr>
+<tr>
+<td>60</td>
+<td>113.55</td>
+<td>0.004055346</td>
+</tr>
+<tr>
+<td>65</td>
+<td>116.03</td>
+<td>0.004161164</td>
+</tr>
+<tr>
+<td>70</td>
+<td>116.21</td>
+<td>0.003892094</td>
+</tr>
+<tr>
+<td>75</td>
+<td>121.22</td>
+<td>0.00436405</td>
+</tr>
+<tr>
+<td>80</td>
+<td>123.64</td>
+<td>0.004422521</td>
+</tr>
+<tr>
+<td>85</td>
+<td>121</td>
+<td>0.003822293</td>
+</tr>
+<tr>
+<td>90</td>
+<td>126.17</td>
+<td>0.004238934</td>
+</tr>
+<tr>
+<td>95</td>
+<td>127.98</td>
+<td>0.00422445</td>
+</tr>
+<tr>
+<td>100</td>
+<td>123.42</td>
+<td>0.003513928</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>r0 [Ω]</th>
+<th>a average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>93.758</td>
+<td>0.00361693</td>
+</tr>
+</tbody>
+</table>
+<p>金属Aに関する横軸を温度，縦軸を抵抗温度係数としたグラフを3.3.2に示す</p>
+<div style="text-align:center;">グラフ3.3.2 金属Aに関する横軸を温度，縦軸を抵抗温度係数としたグラフ</div>
+<p><img src="A_t.PNG" alt="A"></p>
+<h4 class="mume-header" id="%E9%87%91%E5%B1%9Eb">金属B</h4>
+
+<p>金属Bに関する温度，抵抗，抵抗温度係数をまとめた表を表3.3.3に示す</p>
+<div style="text-align:center;">表3.3.3 金属Bに関する温度，抵抗，抵抗温度係数をまとめた表</div>
+<table>
+<thead>
+<tr>
+<th>t1 [℃]</th>
+<th>r1 [Ω]</th>
+<th>ai</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>104.29</td>
+<td>0.04997335</td>
+</tr>
+<tr>
+<td>25</td>
+<td>103.85</td>
+<td>0.039982942</td>
+</tr>
+<tr>
+<td>30</td>
+<td>104.2</td>
+<td>0.033321487</td>
+</tr>
+<tr>
+<td>35</td>
+<td>106.06</td>
+<td>0.028562724</td>
+</tr>
+<tr>
+<td>40</td>
+<td>110.21</td>
+<td>0.024993336</td>
+</tr>
+<tr>
+<td>45</td>
+<td>113.26</td>
+<td>0.022216956</td>
+</tr>
+<tr>
+<td>50</td>
+<td>109.04</td>
+<td>0.019995735</td>
+</tr>
+<tr>
+<td>55</td>
+<td>113.31</td>
+<td>0.018178293</td>
+</tr>
+<tr>
+<td>60</td>
+<td>119.53</td>
+<td>0.016663704</td>
+</tr>
+<tr>
+<td>65</td>
+<td>120.79</td>
+<td>0.015382091</td>
+</tr>
+<tr>
+<td>70</td>
+<td>120.19</td>
+<td>0.014283538</td>
+</tr>
+<tr>
+<td>75</td>
+<td>123.52</td>
+<td>0.013331437</td>
+</tr>
+<tr>
+<td>80</td>
+<td>127.51</td>
+<td>0.012498334</td>
+</tr>
+<tr>
+<td>85</td>
+<td>130.94</td>
+<td>0.01176323</td>
+</tr>
+<tr>
+<td>90</td>
+<td>135.11</td>
+<td>0.011109795</td>
+</tr>
+<tr>
+<td>95</td>
+<td>134.58</td>
+<td>0.010525134</td>
+</tr>
+<tr>
+<td>100</td>
+<td>137.87</td>
+<td>0.009998934</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>r0 [Ω]</th>
+<th>a average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>91.328</td>
+<td>0.004357341</td>
+</tr>
+</tbody>
+</table>
+<p>金属Bに関する横軸を温度，縦軸を抵抗温度係数としたグラフをグラフ3.3.4に示す</p>
+<div style="text-align:center;">グラフ3.3.4 金属Bに関する横軸を温度，縦軸を抵抗温度係数としたグラフ</div>
+<p><img src="B_t.PNG" alt="B"></p>
+<h3 class="mume-header" id="4-%E6%B1%82%E3%82%81%E3%81%9F%E3%82%92%E6%8A%B5%E6%8A%97%E6%B8%A9%E5%BA%A6%E4%BF%82%E6%95%B0%E3%81%8B%E3%82%893%E7%A8%AE%E9%A1%9E%E3%81%AE%E9%87%91%E5%B1%9E%E3%81%8C%E3%81%9D%E3%82%8C%E3%81%9E%E3%82%8C%E4%BD%95%E3%81%AB%E5%88%86%E9%A1%9E%E3%81%95%E3%82%8C%E3%82%8B%E3%81%8B%E8%A1%A832%E3%81%8B%E3%82%89%E9%81%B8%E3%81%B3%E8%AA%AC%E6%98%8E%E3%81%9B%E3%82%88">4. 求めたを抵抗温度係数から3種類の金属がそれぞれ何に分類されるか表3.2から選び説明せよ。</h3>
+
+<p>金属の抵抗温度係数の表を表3.2に示す</p>
+<div style="text-align:center;">表3.2   金属の抵抗温度係数 (0℃)の表</div>
+<table>
+<thead>
+<tr>
+<th>金属</th>
+<th>a0</th>
+<th></th>
+<th>金属</th>
+<th>a0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>白金</td>
+<td>0.0032</td>
+<td></td>
+<td>タングステン</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td>金</td>
+<td>0.0036</td>
+<td></td>
+<td>鉄</td>
+<td>0.0056</td>
+</tr>
+<tr>
+<td>銀</td>
+<td>0.0041</td>
+<td></td>
+<td>ニッケル</td>
+<td>0.0068</td>
+</tr>
+<tr>
+<td>スズ</td>
+<td>0.0046</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>金属Aの0℃における抵抗温度係数が0.0042655なので最も近い銀であると予想される。</p>
+<p>また金属Bの0℃における抵抗温度係数が0.0050256なので最も近いタングステンだと予想される。</p>
+<h2 class="mume-header" id="%E6%B8%AC%E5%AE%9A%E7%B5%90%E6%9E%9C">測定結果</h2>
+
+<p>実験結果として表3.3を報告する。</p>
+<p>なお，測定したと仮定する3種類の金属A,B,Cは教員が割り当てる。</p>
+<h2 class="mume-header" id="%E7%A0%94%E7%A9%B6%E8%AA%B2%E9%A1%8C">研究課題</h2>
+
+<p>次の研究課題を調べて報告せよ。</p>
+<ol>
+<li>抵抗温度係数の式(3.3)から導かれる応用例はなにか，調べて報告せよ。</li>
+<li>最小二乗法を使った際のメリット・デメリット，および別手法を調べて報告せよ。</li>
+</ol>
+<h3 class="mume-header" id="%E6%8A%B5%E6%8A%97%E6%B8%A9%E5%BA%A6%E4%BF%82%E6%95%B0%E3%81%AE%E5%BC%8F%E3%81%8B%E3%82%89%E5%B0%8E%E3%81%8B%E3%82%8C%E3%82%8B%E5%BF%9C%E7%94%A8%E4%BE%8B%E3%81%AF%E3%81%AA%E3%81%AB%E3%81%8B%E8%AA%BF%E3%81%B9%E3%81%A6%E5%A0%B1%E5%91%8A%E3%81%9B%E3%82%88">抵抗温度係数の式から導かれる応用例はなにか，調べて報告せよ。</h3>
+
+<p>任意の温度における抵抗を計算で求めることができる。</p>
+<h3 class="mume-header" id="%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%97%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E9%9A%9B%E3%81%AE%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%83%87%E3%83%A1%E3%83%AA%E3%83%83%E3%83%88%E3%81%8A%E3%82%88%E3%81%B3%E5%88%A5%E6%89%8B%E6%B3%95%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%A6%E5%A0%B1%E5%91%8A%E3%81%9B%E3%82%88">最小二乗法を使った際のメリット・デメリット，および別手法を調べて報告せよ。</h3>
+
+<p>メリット</p>
+<ul>
+<li>データの正規性を仮定しない→使いやすい</li>
+<li>最尤推定に比べて不適解を出さない</li>
+</ul>
+<p>デメリット</p>
+<ul>
+<li>最小二乗法で得られる因子負荷量は尺度不変ではない
+<ul>
+<li>重み付けのある最小二乗法，一般化最小二乗法では因子負荷量は尺度不変になる</li>
+</ul>
+</li>
+</ul>
+<h2 class="mume-header" id="%E5%8F%82%E8%80%83">参考</h2>
+
+<table>
+<thead>
+<tr>
+<th>タイトル</th>
+<th>URL</th>
+<th>閲覧日時</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>回帰分析・最小二乗法の公式の使い方。公式から分かる回帰直線の性質とは？</td>
+<td><a href="https://atarimae.biz/archives/12142">https://atarimae.biz/archives/12142</a></td>
+<td>2018/07/16</td>
+</tr>
+<tr>
+<td>第一回広島ベイズ塾・最小二乗法</td>
+<td><a href="https://www.slideshare.net/TakashiYamane1/ss-25742604">https://www.slideshare.net/TakashiYamane1/ss-25742604</a></td>
+<td>2018/07/16</td>
+</tr>
+<tr>
+<td>最尤推定</td>
+<td><a href="https://ja.wikipedia.org/wiki/%E6%9C%80%E5%B0%A4%E6%8E%A8%E5%AE%9A">https://ja.wikipedia.org/wiki/最尤推定</a></td>
+<td>2018/07/16</td>
+</tr>
+<tr>
+<td>抵抗温度係数とは</td>
+<td><a href="https://www.rohm.co.jp/electronics-basics/resistors/r_what9">https://www.rohm.co.jp/electronics-basics/resistors/r_what9</a></td>
+<td>2018/07/16</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      
+      
+    </body>
+    
+    
+    
+    
+    
+    
+    
+  </html>
